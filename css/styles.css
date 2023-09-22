@@ -1,15 +1,36 @@
+/*Configuraçõe padrões para o site todo*/
 * {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
     margin: 0;
     padding: 0;
 }
+/*Váriaveis das cores*/
 :root {
-    --color-primary: #ED4D1B;
-    --color-secondary: #FF9A3C;
-    --color-black:#000;
-    --color-white:#fff;
+    --brown-primary: #A27C16;
+    --brown-secondary: #4A330F;
+    --yellow-primary: #F2ED4D;
+    --yellow-secondary: #D9D445;
+    --orange-primary: #FDBF28;
+    --orange-secondary: #FAAA38;
+    --red-primary: #F98450;
+    --red-secondary: #EC4935;
+    --light-pink-primary: #F9C4D8;
+    --light-pink-secondary: #F391BC;
+    --pink-primary: #ED1167;
+    --pink-secondary: #CB1F47;
+    --light-blue-primary: #35C5F0;
+    --light-blue-secondary: #0AA1DE;
+    --blue-primary: #2097D4;
+    --blue-secondary: #177DAF;
+    --purple-primary: #9B3D97;
+    --purple-secondary: #672D8F;
+    --black:#000;
+    --gray-primary: #959494;
+    --gray-secondary: #242021;
+    --white:#fff;
 }
+/*Estilo do corpo do site*/
 body {
     background: linear-gradient(90deg, #FFE7D1 0%, #FFF2E6 100%);
     padding: 0 1rem;
@@ -18,22 +39,26 @@ header,
 .hero-section,
 .courses-section,
 footer {
-    border-color: var(--color-black);
+    border-color: var(--black);
     border-style: solid;
     border-width: 0 1px 1px 1px;
     padding: 1.25rem;
 }
+/*Estilo a logo*/
 header img {
     display: block;
     margin: 1rem auto;
 }
+/*Estilo do grupo de 'links'*/
 header nav {
+    font-family: 'Varela Round', sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 1rem auto 0 ;
 }
+/*Estilo dos 'links'*/
 nav a {
-    color: var(--color-black);
+    color: var(--black);
     font-size: 1.25rem;
     padding: .5rem;
     text-decoration: none;
@@ -42,10 +67,10 @@ header nav a:nth-child(2n-1){
     text-align: right;
 }
 .button {
-    background-color: var(--color-primary);
-    border: 2px solid var(--color-black);
-    box-shadow: 4px 4px 0 var(--color-black);
-    color: var(--color-black);
+    background-color: var(--orange-primary);
+    border: 2px solid var(--black);
+    box-shadow: 4px 4px 0 var(--black);
+    color: var(--black);
     display: block;
     font-size: 1.25rem;
     padding: .75rem 1rem;
@@ -112,15 +137,15 @@ h2 {
     margin-bottom: 4rem;
 }
 .card {
-    background-color: var(--color-primary);
-    border: var(--color-black);
-    box-shadow: 4px 4px 0 var(--color-black);
+    background-color: var(--orange-primary);
+    border: var(--black);
+    box-shadow: 4px 4px 0 var(--black);
     max-width: 17rem;
     padding: 2rem 0 0 2rem;
 }
 .card:nth-child(2n) {
     align-self: end ;
-    background-color: var(--color-secondary);
+    background-color: var(--orange-secondary);
 }
 .card strong {
     display: block;
@@ -149,8 +174,8 @@ footer nav a {
 }
 
 .newsletter-form input {
-    border: 2px solid var(--color-black);
-    box-shadow: 4px 4px 0 var(--color-black) ;
+    border: 2px solid var(--black);
+    box-shadow: 4px 4px 0 var(--black) ;
     font-size: 1.5rem;
     width: 100%;
 }
@@ -174,7 +199,7 @@ footer nav a {
     margin-right: auto;
 }
 .text-primary {
-    color: var(--color-primary);
+    color: var(--orange-primary);
 }
 .text-center {
     text-align: center;
