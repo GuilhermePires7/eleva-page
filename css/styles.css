@@ -161,36 +161,53 @@ h2 {
 /*Rodapé*/
 footer {
     border-bottom: 0;
-    padding: 1rem 1.25rem 4rem;
+    padding: 1rem 1.25rem 2rem;
+    background-color: #2097D4;
+    font-family: 'Varela Round', sans-serif;
 }
+/*Estilo dos links*/
 footer nav a {
     display: block;
-    padding-left: 0;
+    align-items: center;
+}
+/*Estilo dos links*/
+footer a:hover {
+opacity: 0.8;
+color:#FFFF;
+
+}
+/*Estilo do h3*/
+footer h3 {
+    padding: 0.5rem;
+    flex-direction: column;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.3rem;
+    
 }
 
-.newsletter-form label {
-    display: block;
-    font-size: 1.5rem ;
-}
 
-.newsletter-form input {
-    border: 2px solid var(--black);
-    box-shadow: 4px 4px 0 var(--black) ;
-    font-size: 1.5rem;
-    width: 100%;
-}
+
 
 
 /*Úteis*/
+
 .mt-1 {
     margin-top: 1rem;
+    align-items: center;
 }
+
+
 .mt-2 {
     margin-top: 2rem;
 }
+
+
 .mb-1 {
     margin-bottom: 1rem;
+   
 }
+
+
 .mb-2 {
     margin-bottom: 2rem;
 }
@@ -249,7 +266,7 @@ footer nav a {
         flex-direction: row-reverse;
     }
     .about-column {
-        flex: 2;
+        flex: 3;
     }
     .about-column p {
         font-size: 1.25rem;
@@ -257,11 +274,11 @@ footer nav a {
     }
 
     footer nav {
-        flex: 1;
+        flex: 3;
 
     }
     .news-letter-form {
-        flex: 3;
+        flex: 1;
     }
 
 }
