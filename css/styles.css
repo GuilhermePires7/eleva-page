@@ -1,11 +1,9 @@
-/*Configuraçõe padrões para o site todo*/
 * {
     box-sizing: border-box;
-    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
-/*Váriaveis das cores*/
 :root {
     --brown-primary: #A27C16;
     --brown-secondary: #4A330F;
@@ -30,7 +28,6 @@
     --gray-secondary: #242021;
     --white:#fff;
 }
-/*Estilo do corpo do site*/
 body {
     background: linear-gradient(90deg, #FFE7D1 0%, #FFF2E6 100%);
     padding: 0 1rem;
@@ -44,19 +41,19 @@ footer {
     border-width: 0 1px 1px 1px;
     padding: 1.25rem;
 }
-/*Estilo a logo*/
+/* Estilo a logo */
 header img {
     display: block;
     margin: 1rem auto;
 }
-/*Estilo do grupo de 'links'*/
+/* Estilo do grupo de 'links' */
+
 header nav {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Varela round', sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 1rem auto 0 ;
 }
-/*Estilo dos 'links'*/
 nav a {
     color: var(--black);
     font-size: 1.25rem;
@@ -136,7 +133,6 @@ h2 {
     margin-top: -8rem ;
     margin-bottom: 4rem;
 }
-
 .card-1{
     /* card */
     background-color: var(--blue-primary);
@@ -144,7 +140,7 @@ h2 {
     box-shadow: 4px 4px 0 var(--black);
     max-width: 17rem;
     padding: 2rem 0 0 2rem;
-
+   
     /* card:nth-child(2n) */
     align-self: end ;
     background-color: var(--orange-secondary);
@@ -162,18 +158,27 @@ h2 {
 }
 
 .card-2{
-    background-color: var(--pink-primary);
-    border: var(--black);
-    box-shadow: 4px 4px 0 var(--black);
-    max-width: 17rem;
-    padding: 2rem 0 0 2rem;
-
-    align-self: end ;
-    background-color: var(--blue-secondary);
-
-    display: block;
-    margin: 2rem 0 0 auto ;
-    width: fit-content;
+     /* card */
+     background-color: var(--blue-primary);
+     border: var(--black);
+     box-shadow: 4px 4px 0 var(--black);
+     max-width: 17rem;
+     padding: 2rem 0 0 2rem;
+ 
+     /* card:nth-child(2n) */
+     align-self: end ;
+     background-color: var(--blue-secondary);
+ 
+     /* card strong */
+     display: block;
+     font-size: 1.3rem;
+     margin: 1rem 0;
+     align-items: center;
+ 
+     /* card a */
+     display: block;
+     margin: 2rem 0 0 auto ;
+     width: fit-content;
 }
 .card-3{
     background-color: var(--blue-primary);
@@ -272,6 +277,7 @@ h2 {
     margin: 0 auto;
     justify-content: center;
     justify-items: center;
+    
 }
 .textoT{
     display: block;
@@ -280,6 +286,16 @@ h2 {
     align-items: center;
     text-align: center;
 }
+
+.ghost{
+    width: 90px;
+    height: 90px;
+    align-items:center;
+    display:flex;
+   
+    
+}
+
 /*Rodapé*/
 footer {
     border-bottom: 0;
