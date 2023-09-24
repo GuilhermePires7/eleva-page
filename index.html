@@ -10,18 +10,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Varela+Round&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
             
-            <img src="img/logo.svg" alt="Img Logo">
+            <img src="img/logo.svg" alt="Img Jazz">
             <nav>
-                <a href="#">Introdução</a>
+                <a href="#">Inicio</a>
                 <a href="#">Programação</a>
                 <a href="#">Palestrantes</a>
+                <a href="#">Contatos</a>
             </nav>
+            <a href="#" class="button mt-1 mb-1 mx-auto">Se inscreva</a>
         </div>
     </header>
     <main>
@@ -40,58 +42,91 @@
         </section>
 
         <section class="courses-section">
+            
+            <h1 class="text-center mb-1 ">Conheça nossos <span class="text-primary decoration">palestrantes!</span></h1>
 
-            <div class="cards">
+            <div class="cards mt-1">
 
-                <article class="card">
-                    <img src="img/piano.png" alt="ícone tecla de piano">
-                    <strong>Piano popular</strong>
+                <article class="card-1">
+                    <div class="imagem">
+                    <img  class="imagem" src="img/Terry Crews.jpeg" alt="Terry" >
+                    </div>
+                    <strong class="textoT">Piano popular</strong>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
                         the industry's 
                         standard dummy text ever since the 1500s
                     </p>
-                    <a href="#">
-                        <img src="img/arrow-right.svg" alt="Ir para pagina">
-                    </a>
+                  
                 </article>
 
-                <article class="card">
-                    <img src="img/clef.png" alt="ícone clave do sol">
-                    <strong>Teoria musical</strong>
+                <article class="card-2">
+                    <div class="imagem">
+                    <img class="imagem" src="img/mulher.jpeg" alt="mulher sorrindo">
+                    </div>
+                    <strong class="textoT">Paola Silva</strong>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
+                        the industry's 
+                        standard dummy text ever since the 1500s
+                   
+                </article>
+
+                <article class="card-3">
+                    <div class="imagem" >
+                    <img class="imagem" src="img/sax.png" alt="ícone do saxofone">
+                    </div>
+                    <strong class="textoT">Saxofone</strong>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
                         the industry's 
                         standard dummy text ever since the 1500s
                     </p>
-                    <a href="#">
-                        <img src="img/arrow-right.svg" alt="Ir para pagina">
-                    </a>
+                   
                 </article>
-
-                <article class="card">
-                    <img src="img/sax.png" alt="ícone do saxofone">
-                    <strong>Saxofone</strong>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
-                        the industry's 
-                        standard dummy text ever since the 1500s
-                    </p>
-                    <a href="#">
-                        <img src="img/arrow-right.svg" alt="Ir para pagina">
-                    </a>
-                </article>
-                <article class="card">
-                    <img src="img/drums.png" alt="ícone da bateria">
-                    <strong>Bateria</strong>
+                <article class="card-4">
+                    <div class="imagem">
+                    <img class="imagem" src="img/drums.png" alt="ícone da bateria">
+                   </div>
+                    <strong class="textoT">Bateria</strong>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
                         the industry's 
                         standard dummy text ever since the 1500s,
                     </p>
-                    <a href="#">
-                        <img src="img/arrow-right.svg" alt="Ir para pagina">
-                    </a>
+                    
+                </article>
+                <article class="card-5">
+                    <div class="imagem">
+                    <img class="imagem" src="img/drums.png" alt="ícone da bateria">
+                    </div>
+                    <strong class="textoT">Bateria</strong>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
+                        the industry's 
+                        standard dummy text ever since the 1500s,
+                    </p>
+                  
+                </article>
+                <article class="card-6">
+                    <div class="imagem">
+                    <img class="imagem" src="img/drums.png" alt="ícone da bateria">
+                    </div>
+                    <strong class="textoT">Bateria</strong>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
+                        the industry's 
+                        standard dummy text ever since the 1500s,
+                    </p>
+                  
+                </article>
+                <article class="card-7">
+                    <div class="imagem">
+                    <img class="imagem" src="img/drums.png" alt="ícone da bateria">
+                    </div>
+                    <strong class="textoT">Bateria</strong>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
+                        the industry's 
+                        standard dummy text ever since the 1500s,
+                   
                 </article>
             </div>
 
-            <h2 class="text-center">E <span class="text-primary">vários</span> outros</h2>
+            <h2 class="text-center">Nossa <span class="text-primary">Programação!</span></h2>
 
             <a href="#" class="button mt-2 mx-auto">Conhecer cursos</a>
         </section>
@@ -109,10 +144,9 @@
     
             <nav class="mb-1">
                 <h3>Início</h3>
-                <a href="#">Introdução</a>
-                <a href="#">Programação</a>
-                <a href="#">Palestrantes</a>
-                
+                <a href="#">Cursos</a>
+                <a href="#">Eventos</a>
+                <a href="#">Contatos</a>
             </nav>
     
          <nav class="mb-1">
