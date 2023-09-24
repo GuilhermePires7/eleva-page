@@ -131,33 +131,155 @@ h2 {
 .cards {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     gap: 1.25rem;
     margin-top: -8rem ;
     margin-bottom: 4rem;
 }
-.card {
-    background-color: var(--orange-primary);
+
+.card-1{
+    /* card */
+    background-color: var(--blue-primary);
     border: var(--black);
     box-shadow: 4px 4px 0 var(--black);
     max-width: 17rem;
     padding: 2rem 0 0 2rem;
-}
-.card:nth-child(2n) {
+
+    /* card:nth-child(2n) */
     align-self: end ;
     background-color: var(--orange-secondary);
-}
-.card strong {
+
+    /* card strong */
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 1rem 0;
-}
-.card a {
+    align-items: center;
+
+    /* card a */
     display: block;
     margin: 2rem 0 0 auto ;
     width: fit-content;
 }
 
+.card-2{
+    background-color: var(--pink-primary);
+    border: var(--black);
+    box-shadow: 4px 4px 0 var(--black);
+    max-width: 17rem;
+    padding: 2rem 0 0 2rem;
+
+    align-self: end ;
+    background-color: var(--blue-secondary);
+
+    display: block;
+    margin: 2rem 0 0 auto ;
+    width: fit-content;
+}
+.card-3{
+    background-color: var(--blue-primary);
+    border: var(--black);
+    box-shadow: 4px 4px 0 var(--black);
+    max-width: 17rem;
+    padding: 2rem 0 0 2rem;
+
+    align-self: end ;
+    background-color: var(--red-secondary);
+
+    display: block;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+
+    display: block;
+    margin: 2rem 0 0 auto ;
+    width: fit-content;
+}
+.card-4{
+    background-color: var(--orange-primary);
+    border: var(--black);
+    box-shadow: 4px 4px 0 var(--black);
+    max-width: 17rem;
+    padding: 2rem 0 0 2rem;
+
+    align-self: end ;
+    background-color: var(--purple-secondary);
+
+    display: block;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+
+    display: block;
+    margin: 2rem 0 0 auto ;
+    width: fit-content;
+}
+.card-5{
+    background-color: var(--red-primary);
+    border: var(--black);
+    box-shadow: 4px 4px 0 var(--black);
+    max-width: 17rem;
+    padding: 2rem 0 0 2rem;
+
+    align-self: end ;
+    background-color: var(--blue-secondary);
+
+    display: block;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+
+    display: block;
+    margin: 2rem 0 0 auto ;
+    width: fit-content;
+}
+.card-6{
+    background-color: var(--purple-primary);
+    border: var(--black);
+    box-shadow: 4px 4px 0 var(--black);
+    max-width: 17rem;
+    padding: 2rem 0 0 2rem;
+
+    align-self: end ;
+    background-color: var(--light-pink-secondary);
+
+    display: block;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+
+    display: block;
+    margin: 2rem 0 0 auto ;
+    width: fit-content;
+}
+.card-7{
+    background-color: var(--blue-primary);
+    border: var(--black);
+    box-shadow: 4px 4px 0 var(--black);
+    max-width: 17rem;
+    padding: 2rem 0 0 2rem;
+
+    align-self: end ;
+    background-color: var(--orange-secondary);
+
+    display: block;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+
+    display: block;
+    margin: 2rem 0 0 auto ;
+    width: fit-content;
+}
+
+.imagem{
+    width: 108px;
+    height: 108px;
+    margin: 0 auto;
+    justify-content: center;
+    justify-items: center;
+}
+.textoT{
+    display: block;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    align-items: center;
+    text-align: center;
+}
 /*Rodapé*/
 footer {
     border-bottom: 0;
@@ -199,7 +321,7 @@ footer nav a {
     margin-right: auto;
 }
 .text-primary {
-    color: var(--orange-primary);
+    color: var(--pink-secondary);
 }
 .text-center {
     text-align: center;
