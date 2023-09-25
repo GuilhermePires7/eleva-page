@@ -9,36 +9,45 @@
     --brown-secondary: #4A330F;
     --yellow-primary: #F2ED4D;
     --yellow-secondary: #D9D445;
-    --orange-primary: #FDBF28;
-    --orange-secondary: #FAAA38;
+    --orange-primary: #fec126;
+    --orange-secondary: #e6a851;
     --red-primary: #F98450;
     --red-secondary: #EC4935;
     --light-pink-primary: #F9C4D8;
     --light-pink-secondary: #F391BC;
     --pink-primary: #ED1167;
-    --pink-secondary: #CB1F47;
+    --pink-secondary: #cf5e79;
     --light-blue-primary: #35C5F0;
     --light-blue-secondary: #0AA1DE;
     --blue-primary: #2097D4;
     --blue-secondary: #177DAF;
+    --blue-heavy: #175ec0;
+    --blue-weak:#4994fc;
     --purple-primary: #9B3D97;
     --purple-secondary: #672D8F;
     --black:#000;
     --gray-primary: #959494;
     --gray-secondary: #242021;
-    --white:#fff;
+    --white:#ebe5e5;
 }
 body {
     background: linear-gradient(90deg, #FFE7D1 0%, #FFF2E6 100%);
     padding: 0 1rem;
 }
+header {
+    width: 100%;
+    height: 80px;
+    padding: 0 5rem;
+    background-color: var(--white);
+}
 header,
 .hero-section,
 .courses-section,
+.programation-section,
 footer {
-    border-color: var(--black);
+    /* border-color: var(--black);
     border-style: solid;
-    border-width: 0 1px 1px 1px;
+    border-width: 0 1px 1px 1px; */
     padding: 1.25rem;
 }
 /* Estilo a logo */
@@ -46,23 +55,60 @@ header img {
     display: block;
     margin: 1rem auto;
 }
+.hero-section {
+     background: linear-gradient( var(--light-blue-primary),var(--blue-secondary),var(--white)); 
+   
+}
+.hero-course-linear {
+    height: 100px;
+    background: linear-gradient( var(--white), var(--orange-secondary));
+}
+.courses-section {
+      background: linear-gradient( var(--orange-secondary), #cb356b); 
+}
+
+.course-programation-linear {
+    border: none;
+    height: 80px;
+    background: linear-gradient(#cb356b, var(--purple-primary));
+}
+
+.programation-section {
+    background: linear-gradient(  var(--purple-primary), var(--blue-heavy));
+}
+.main-footer-linear {
+    height: 100px;
+    background: linear-gradient( var(--blue-heavy) ,var(--blue-weak));
+}
 /* Estilo do grupo de 'links' */
 
 header nav {
-    font-family: 'Varela round', sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 1rem auto 0 ;
 }
-nav a {
-    color: var(--black);
-    font-size: 1.25rem;
-    padding: .5rem;
-    text-decoration: none;
-}
+
 header nav a:nth-child(2n-1){
     text-align: right;
 }
+
+nav a {
+    color: var(--black);
+    font-style: italic;
+    font-size: 1.10rem;
+    margin-right: 10px;
+    padding: .5rem 1.2rem;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: var(--light-blue-primary);
+    font-weight: bold;
+    color: var(--white);
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.4)!important;
+    border-radius: 8px;
+}
+
+
 .button {
     background-color: var(--orange-primary);
     border: 2px solid var(--black);
@@ -132,6 +178,34 @@ h2 {
     gap: 1.25rem;
     margin-top: -8rem ;
     margin-bottom: 4rem;
+}
+.card {
+    width: 300px;
+    height: 380px;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 15px;
+    font-size:20px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.2)!important;
+    border: none!important;
+}
+.card:hover {
+    background-color: var(--light-blue-primary);
+}
+.card p {
+    text-align: center;
+    color: var(--black);
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 400px;
+    margin-top: 20px;
+}
+.img-tre img{
+    width: 100%;
+    border-radius: 30px;
 }
 .card-1{
     /* card */
@@ -279,6 +353,9 @@ h2 {
     justify-items: center;
     
 }
+.icons-programation {
+    margin-top: 50px;
+}
 .textoT{
     display: block;
     font-size: 1.5rem;
@@ -300,8 +377,11 @@ h2 {
 footer {
     border-bottom: 0;
     padding: 1rem 1.25rem 2rem;
-    background-color: #2097D4;
+    background: linear-gradient( var(--blue-weak),var(--blue-weak));
     font-family: 'Varela Round', sans-serif;
+    /* border-color: var(--black);
+    border-style: solid;
+    border-width: 1px 0px 0px 0px; */
 }
 /*Estilo dos links*/
 footer nav a {
@@ -354,10 +434,13 @@ footer h3 {
     margin-right: auto;
 }
 .text-primary {
-    color: var(--pink-secondary);
+    color: var(--white);
 }
 .text-center {
     text-align: center;
+}
+.h1-white {
+    color: var(--black);
 }
 /*Responsividade*/
 @media screen and (min-width: 40rem) {
@@ -374,6 +457,11 @@ footer h3 {
         margin-top: 1rem;
     }
 
+}
+@media screen and (max-width: 40rem) {
+    header {
+        height: 200px;
+    }
 }
 @media screen and (min-width: 40rem) {
     header div {
