@@ -57,18 +57,18 @@ header img {
 }
 .hero-section {
      background: linear-gradient( var(--light-blue-primary),var(--blue-secondary),var(--white)); 
-   
 }
 .hero-course-linear {
+    border-style: none;
     height: 100px;
     background: linear-gradient( var(--white), var(--orange-secondary));
 }
 .courses-section {
-      background: linear-gradient( var(--orange-secondary), #cb356b); 
+    background: linear-gradient( var(--orange-secondary), #cb356b); 
 }
 
 .course-programation-linear {
-    border: none;
+    border-style: none;
     height: 80px;
     background: linear-gradient(#cb356b, var(--purple-primary));
 }
@@ -77,6 +77,7 @@ header img {
     background: linear-gradient(  var(--purple-primary), var(--blue-heavy));
 }
 .main-footer-linear {
+    border-style: none;
     height: 100px;
     background: linear-gradient( var(--blue-heavy) ,var(--blue-weak));
 }
@@ -107,7 +108,6 @@ nav a:hover{
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.4)!important;
     border-radius: 8px;
 }
-
 
 .button {
     background-color: var(--orange-primary);
@@ -207,54 +207,54 @@ h2 {
     width: 100%;
     border-radius: 30px;
 }
-.card-1{
-    /* card */
+/* .card-1{
+    
     background-color: var(--blue-primary);
     border: var(--black);
     box-shadow: 4px 4px 0 var(--black);
     max-width: 17rem;
     padding: 2rem 0 0 2rem;
    
-    /* card:nth-child(2n) */
+    
     align-self: end ;
     background-color: var(--orange-secondary);
 
-    /* card strong */
+    
     display: block;
     font-size: 1.3rem;
     margin: 1rem 0;
     align-items: center;
 
-    /* card a */
+    
     display: block;
     margin: 2rem 0 0 auto ;
     width: fit-content;
-}
+} */
 
 .card-2{
      /* card */
-     background-color: var(--blue-primary);
+     /* background-color: var(--blue-primary);
      border: var(--black);
      box-shadow: 4px 4px 0 var(--black);
      max-width: 17rem;
-     padding: 2rem 0 0 2rem;
+     padding: 2rem 0 0 2rem; */
  
      /* card:nth-child(2n) */
-     align-self: end ;
-     background-color: var(--blue-secondary);
+     /* align-self: end ;
+     background-color: var(--blue-secondary); */
  
      /* card strong */
-     display: block;
+     /* display: block;
      font-size: 1.3rem;
      margin: 1rem 0;
      align-items: center;
- 
+  */
      /* card a */
-     display: block;
+     /* display: block;
      margin: 2rem 0 0 auto ;
-     width: fit-content;
+     width: fit-content; */
 }
-.card-3{
+/* .card-3{
     background-color: var(--blue-primary);
     border: var(--black);
     box-shadow: 4px 4px 0 var(--black);
@@ -271,8 +271,8 @@ h2 {
     display: block;
     margin: 2rem 0 0 auto ;
     width: fit-content;
-}
-.card-4{
+} */
+/* .card-4{
     background-color: var(--orange-primary);
     border: var(--black);
     box-shadow: 4px 4px 0 var(--black);
@@ -289,8 +289,8 @@ h2 {
     display: block;
     margin: 2rem 0 0 auto ;
     width: fit-content;
-}
-.card-5{
+} */
+/* .card-5{
     background-color: var(--red-primary);
     border: var(--black);
     box-shadow: 4px 4px 0 var(--black);
@@ -307,8 +307,8 @@ h2 {
     display: block;
     margin: 2rem 0 0 auto ;
     width: fit-content;
-}
-.card-6{
+} */
+/* .card-6{
     background-color: var(--purple-primary);
     border: var(--black);
     box-shadow: 4px 4px 0 var(--black);
@@ -325,8 +325,8 @@ h2 {
     display: block;
     margin: 2rem 0 0 auto ;
     width: fit-content;
-}
-.card-7{
+} */
+/* .card-7{
     background-color: var(--blue-primary);
     border: var(--black);
     box-shadow: 4px 4px 0 var(--black);
@@ -343,7 +343,7 @@ h2 {
     display: block;
     margin: 2rem 0 0 auto ;
     width: fit-content;
-}
+} */
 
 .imagem{
     width: 108px;
@@ -351,7 +351,6 @@ h2 {
     margin: 0 auto;
     justify-content: center;
     justify-items: center;
-    
 }
 .icons-programation {
     margin-top: 50px;
@@ -376,7 +375,7 @@ h2 {
 /*Rodapé*/
 footer {
     border-bottom: 0;
-    padding: 1rem 1.25rem 2rem;
+    padding: 0rem 1.25rem 2rem;
     background: linear-gradient( var(--blue-weak),var(--blue-weak));
     font-family: 'Varela Round', sans-serif;
     /* border-color: var(--black);
