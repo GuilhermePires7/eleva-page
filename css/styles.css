@@ -32,13 +32,12 @@
 }
 body {
     background: linear-gradient(90deg, #FFE7D1 0%, #FFF2E6 100%);
-    padding: 0 1rem;
 }
 header {
     width: 100%;
     height: 80px;
     padding: 0 5rem;
-    background-color: var(--white);
+    background-color: var(--red-secondary);
 }
 header,
 .hero-section,
@@ -50,7 +49,7 @@ footer {
     border-width: 0 1px 1px 1px; */
     padding: 1.25rem;
 }
-/* Estilo a logo */
+/* Estilo Da logo */
 header img {
     display: block;
     margin: 1rem auto;
@@ -95,18 +94,17 @@ header nav a:nth-child(2n-1){
 
 nav a {
     color: var(--black);
-    font-style: italic;
     font-size: 1.10rem;
     margin-right: 10px;
     padding: .5rem 1.2rem;
     text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 500;
 }
 nav a:hover{
-    background-color: var(--light-blue-primary);
-    font-weight: bold;
-    color: var(--white);
-    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.4)!important;
+    font-weight: 700;
     border-radius: 8px;
+    transition: 0.5s;
 }
 
 .button {
