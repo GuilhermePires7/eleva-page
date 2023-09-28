@@ -134,7 +134,7 @@ nav a:hover{
 h1 span {
     font-size: 3rem;
     line-height: 105% ;
-    font-family: "Varela Round";
+    font-family: "Skranji", Open Sans;
    color: #9B3D97;
    font-size: 64px;
 font-style: normal;
@@ -180,17 +180,22 @@ h2 {
 
 }
 .cards {
-    width: 1179px;
+    width: 1180px;
     height: 1942px;
     flex-shrink: 0; 
     border-radius: 59px;
     background: #FFF; 
     display: flex;
     flex-direction: column;
-   
     gap: 1.25rem;
     margin-top: -8rem ;
     margin-bottom: 8rem;
+    align-items: center;
+}
+.cards-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .cards img{
@@ -209,7 +214,7 @@ h2 {
 .card:hover {
     background-color: var(--light-blue-primary);
 }
-.card p {
+.card-1, .card-2, .card-3, .card-4 p {
     text-align: center;
     color: var(--black);
     font-weight: bold;
@@ -219,6 +224,7 @@ h2 {
     overflow: hidden;
     height: 400px;
     margin-top: 20px;
+    align-items: center;
 }
 .img-tre img{
     width: 100%;
