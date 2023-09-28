@@ -222,12 +222,11 @@ h2 {
 .card-1{
     
     width: 959px;
-    padding-top: 2px;
     height: 466px;
     flex-shrink: 0; 
     border-radius: 40px;
-background: #00D1FF;
-box-shadow: 9px 7px 8px 0px rgba(0, 0, 0, 0.25);
+    background: #00D1FF;
+    box-shadow: 9px 7px 8px 0px rgba(0, 0, 0, 0.25);
 
 } 
 
