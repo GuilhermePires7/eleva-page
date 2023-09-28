@@ -131,9 +131,17 @@ nav a:hover{
     margin: 1.25rem 0 0 auto;
     max-width: 100%;
 }
-h1 {
+h1 span {
     font-size: 3rem;
     line-height: 105% ;
+    font-family: "Varela Round";
+   color: #9B3D97;
+   font-size: 64px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+letter-spacing: 1.28px;
+text-transform: capitalize; 
 }
 h2 {
     font-size: 2.5rem;
@@ -172,12 +180,17 @@ h2 {
 
 }
 .cards {
+    width: 1184px;
+    height: 1942px;
+    flex-shrink: 0; 
+    border-radius: 59px;
+    background: #FFF; 
     display: flex;
     flex-direction: column;
-    align-items: center;
+   
     gap: 1.25rem;
     margin-top: -8rem ;
-    margin-bottom: 4rem;
+    margin-bottom: 8rem;
 }
 .card {
     width: 300px;
@@ -207,6 +220,7 @@ h2 {
     width: 100%;
     border-radius: 30px;
 }
+<<<<<<< HEAD
 
 .palestrantes{
     background-image: url(/eleva-page/img/Rectangle.png);
@@ -228,18 +242,19 @@ h2 {
     
     align-self: end ;
     background-color: var(--orange-secondary);
+=======
+>>>>>>> b64e715ed8a8581d17bacfb4e5f6eef77cd6bda5
 
+.card-1{
     
-    display: block;
-    font-size: 1.3rem;
-    margin: 1rem 0;
-    align-items: center;
+    width: 959px;
+    height: 466px;
+    flex-shrink: 0; 
+    border-radius: 40px;
+    background: #00D1FF;
+    box-shadow: 9px 7px 8px 0px rgba(0, 0, 0, 0.25);
 
-    
-    display: block;
-    margin: 2rem 0 0 auto ;
-    width: fit-content;
-} */
+} 
 
 .card-2{
      /* card */
