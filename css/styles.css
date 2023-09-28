@@ -34,7 +34,7 @@ body {
     background: var(--light-blue-primary);
 }
 header {
-    width: 100%;
+    width: 50%;
     height: 80px;
     padding: 0 5rem;
     border-radius: 84px;
