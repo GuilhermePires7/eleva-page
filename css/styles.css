@@ -192,6 +192,10 @@ h2 {
     margin-top: -8rem ;
     margin-bottom: 8rem;
 }
+
+.cards img{
+    padding-left: 10px;
+}
 .card {
     width: 300px;
     height: 380px;
@@ -232,65 +236,69 @@ h2 {
 
 } 
 
-.card-2{
-     /* card */
-     /* background-color: var(--blue-primary);
-     border: var(--black);
-     box-shadow: 4px 4px 0 var(--black);
-     max-width: 17rem;
-     padding: 2rem 0 0 2rem; */
- 
-     /* card:nth-child(2n) */
-     /* align-self: end ;
-     background-color: var(--blue-secondary); */
- 
-     /* card strong */
-     /* display: block;
-     font-size: 1.3rem;
-     margin: 1rem 0;
-     align-items: center;
-  */
-     /* card a */
-     /* display: block;
-     margin: 2rem 0 0 auto ;
-     width: fit-content; */
+h4{
+    color: #2C2727;
+    text-align: center;
+    font-family: "Exo 2";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 1.28px;
+    text-transform: capitalize; 
+    align-items: center;
 }
-/* .card-3{
-    background-color: var(--blue-primary);
-    border: var(--black);
-    box-shadow: 4px 4px 0 var(--black);
-    max-width: 17rem;
-    padding: 2rem 0 0 2rem;
+h5{
+    color: #2C2727;
+text-align: center;
+font-family: "Exo 2";
+font-size: 16px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+letter-spacing: 1.28px;
+text-transform: capitalize; 
+color: #FFF ;
+margin-top: 4px;
+}
+p{
+width: 434px;
+color: #2C2727;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.32px;
+text-transform: capitalize;
+margin-right: 10px;
 
-    align-self: end ;
-    background-color: var(--red-secondary);
+}
 
-    display: block;
-    font-size: 1.3rem;
-    margin: 1rem 0;
-
-    display: block;
-    margin: 2rem 0 0 auto ;
-    width: fit-content;
-} */
-/* .card-4{
-    background-color: var(--orange-primary);
-    border: var(--black);
-    box-shadow: 4px 4px 0 var(--black);
-    max-width: 17rem;
-    padding: 2rem 0 0 2rem;
-
-    align-self: end ;
-    background-color: var(--purple-secondary);
-
-    display: block;
-    font-size: 1.3rem;
-    margin: 1rem 0;
-
-    display: block;
-    margin: 2rem 0 0 auto ;
-    width: fit-content;
-} */
+.card-2{
+    width: 432px;
+    height: 668px;
+    flex-shrink: 0;
+    border-radius: 37px;
+background: #9B3D97;
+box-shadow: 14px 8px 11px 0px rgba(0, 0, 0, 0.25);
+}
+.card-3{
+    width: 558px;
+height: 606px;
+flex-shrink: 0;
+border-radius: 37px;
+background: #ED1167;
+box-shadow: 14px 8px 11px 0px rgba(0, 0, 0, 0.25);
+} 
+.card-4{
+    width: 959px;
+    height: 466px;
+    flex-shrink: 0;
+    border-radius: 40px;
+background: #00D1FF;
+box-shadow: 9px 7px 8px 0px rgba(0, 0, 0, 0.23);
+} 
 /* .card-5{
     background-color: var(--red-primary);
     border: var(--black);
