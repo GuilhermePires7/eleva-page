@@ -236,42 +236,35 @@ h2 {
 
 } 
 
-h4{
-    color: #2C2727;
-    text-align: center;
-    font-family: "Exo 2";
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-    letter-spacing: 1.28px;
-    text-transform: capitalize; 
-    align-items: center;
-}
-h5{
-    color: #2C2727;
-text-align: center;
-font-family: "Exo 2";
-font-size: 16px;
-font-style: normal;
-font-weight: 900;
-line-height: normal;
-letter-spacing: 1.28px;
-text-transform: capitalize; 
-color: #FFF ;
-margin-top: 4px;
-}
-p{
-width: 434px;
-color: #2C2727;
-font-family: Poppins;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.32px;
-text-transform: capitalize;
-margin-right: 10px;
+/*.card-2{
+     /* card */
+     /* background-color: var(--blue-primary);
+     border: var(--black);
+     box-shadow: 4px 4px 0 var(--black);
+     max-width: 17rem;
+     padding: 2rem 0 0 2rem; */
+ 
+     /* card:nth-child(2n) */
+     /* align-self: end ;
+     background-color: var(--blue-secondary); */
+ 
+     /* card strong */
+     /* display: block;
+     font-size: 1.3rem;
+     margin: 1rem 0;
+     align-items: center;
+  */
+     /* card a */
+     /* display: block;
+     margin: 2rem 0 0 auto ;
+     width: fit-content; */
+/* } */
+/* .card-3{
+    background-color: var(--blue-primary);
+    border: var(--black);
+    box-shadow: 4px 4px 0 var(--black);
+    max-width: 17rem;
+    padding: 2rem 0 0 2rem;
 
 }
 
