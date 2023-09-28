@@ -31,18 +31,20 @@
     --white:#ebe5e5;
 }
 body {
-    background: linear-gradient(90deg, #FFE7D1 0%, #FFF2E6 100%);
+    background: var(--light-blue-primary);
 }
 header {
     width: 100%;
     height: 80px;
     padding: 0 5rem;
-    background-color: var(--red-secondary);
+    border-radius: 84px;
+    background: #F09;
+    box-shadow: 3px 4px 0px 0px #FFF;
 }
 header,
 .hero-section,
-.courses-section,
 .programation-section,
+.courses-section
 footer {
     /* border-color: var(--black);
     border-style: solid;
@@ -54,27 +56,27 @@ header img {
     display: block;
     margin: 1rem auto;
 }
-.hero-section {
+/* .hero-section {
      background: linear-gradient( var(--light-blue-primary),var(--blue-secondary),var(--white)); 
-}
-.hero-course-linear {
+} */
+/* .hero-course-linear {
     border-style: none;
     height: 100px;
     background: linear-gradient( var(--white), var(--orange-secondary));
-}
-.courses-section {
+} */
+/* .courses-section {
     background: linear-gradient( var(--orange-secondary), #cb356b); 
-}
+} */
 
-.course-programation-linear {
+/* .course-programation-linear {
     border-style: none;
     height: 80px;
     background: linear-gradient(#cb356b, var(--purple-primary));
-}
+} */
 
-.programation-section {
+/* .programation-section {
     background: linear-gradient(  var(--purple-primary), var(--blue-heavy));
-}
+} */
 .main-footer-linear {
     border-style: none;
     height: 100px;
@@ -218,6 +220,30 @@ h2 {
     width: 100%;
     border-radius: 30px;
 }
+<<<<<<< HEAD
+
+.palestrantes{
+    background-image: url(/eleva-page/img/Rectangle.png);
+}
+
+.programacao{
+   background-image: url(/eleva-page/img/Rectangle\ 2.png);
+   padding-top: 0;
+}
+
+/* .card-1{
+    
+    background-color: var(--blue-primary);
+    border: var(--black);
+    box-shadow: 4px 4px 0 var(--black);
+    max-width: 17rem;
+    padding: 2rem 0 0 2rem;
+   
+    
+    align-self: end ;
+    background-color: var(--orange-secondary);
+=======
+>>>>>>> b64e715ed8a8581d17bacfb4e5f6eef77cd6bda5
 
 .card-1{
     
