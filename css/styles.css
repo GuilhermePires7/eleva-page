@@ -404,7 +404,7 @@ footer h3 {
 }
 
 .palestrantes{
-    background-color: #F09;;
+    background-color: var(--yellow-primary);
 }
 
 
