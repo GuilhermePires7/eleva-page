@@ -180,7 +180,7 @@ h2 {
 
 }
 .cards {
-    width: 1184px;
+    width: 1179px;
     height: 1942px;
     flex-shrink: 0; 
     border-radius: 59px;
@@ -229,61 +229,31 @@ h2 {
     
     width: 959px;
     height: 466px;
-    flex-shrink: 0; 
+    flex-shrink: 0;
     border-radius: 40px;
-   background: #00D1FF;
-   box-shadow: 9px 7px 8px 0px rgba(0, 0, 0, 0.25);
-
+background: #00D1FF;
+box-shadow: 9px 7px 8px 0px rgba(0, 0, 0, 0.25);
 } 
-
-/*.card-2{
-     /* card */
-     /* background-color: var(--blue-primary);
-     border: var(--black);
-     box-shadow: 4px 4px 0 var(--black);
-     max-width: 17rem;
-     padding: 2rem 0 0 2rem; */
- 
-     /* card:nth-child(2n) */
-     /* align-self: end ;
-     background-color: var(--blue-secondary); */
- 
-     /* card strong */
-     /* display: block;
-     font-size: 1.3rem;
-     margin: 1rem 0;
-     align-items: center;
-  */
-     /* card a */
-     /* display: block;
-     margin: 2rem 0 0 auto ;
-     width: fit-content; */
-/* } */
-/* .card-3{
-    background-color: var(--blue-primary);
-    border: var(--black);
-    box-shadow: 4px 4px 0 var(--black);
-    max-width: 17rem;
-    padding: 2rem 0 0 2rem;
-
-}
 
 .card-2{
     width: 432px;
     height: 668px;
     flex-shrink: 0;
     border-radius: 37px;
-background: #9B3D97;
-box-shadow: 14px 8px 11px 0px rgba(0, 0, 0, 0.25);
+    background: #9B3D97;
+    box-shadow: 14px 8px 11px 0px rgba(0, 0, 0, 0.25);
 }
-.card-3{
+ .card-3{
     width: 558px;
-height: 606px;
-flex-shrink: 0;
-border-radius: 37px;
-background: #ED1167;
-box-shadow: 14px 8px 11px 0px rgba(0, 0, 0, 0.25);
-} 
+    height: 606px;
+    flex-shrink: 0;
+    border-radius: 37px;
+    background: #ED1167;
+    box-shadow: 14px 8px 11px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+
 .card-4{
     width: 959px;
     height: 466px;
