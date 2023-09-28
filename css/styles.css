@@ -95,15 +95,17 @@ header nav a:nth-child(2n-1){
 }
 
 nav a {
-    color: var(--black);
+    color: var(--white);
     font-size: 1.10rem;
     margin-right: 10px;
     padding: .5rem 1.2rem;
     text-decoration: none;
     font-family: 'Varela Round', sans-serif;
     font-weight: 500;
+    
 }
 nav a:hover{
+    color: var(--purple-primary);
     font-weight: 700;
     border-radius: 8px;
     transition: 0.5s;
@@ -134,7 +136,7 @@ nav a:hover{
 h1 span {
     font-size: 3rem;
     line-height: 105% ;
-    font-family: "Varela Round";
+    font-family: "Skranji", Open Sans;
    color: #9B3D97;
    font-size: 64px;
 font-style: normal;
@@ -180,17 +182,22 @@ h2 {
 
 }
 .cards {
-    width: 1179px;
+    width: 1180px;
     height: 1942px;
     flex-shrink: 0; 
     border-radius: 59px;
     background: #FFF; 
     display: flex;
     flex-direction: column;
-   
     gap: 1.25rem;
     margin-top: -8rem ;
     margin-bottom: 8rem;
+    align-items: center;
+}
+.cards-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .cards img{
@@ -209,7 +216,7 @@ h2 {
 .card:hover {
     background-color: var(--light-blue-primary);
 }
-.card p {
+.card-1, .card-2, .card-3, .card-4 p {
     text-align: center;
     color: var(--black);
     font-weight: bold;
@@ -219,6 +226,7 @@ h2 {
     overflow: hidden;
     height: 400px;
     margin-top: 20px;
+    align-items: center;
 }
 .img-tre img{
     width: 100%;
@@ -375,10 +383,30 @@ footer h3 {
 }
 
 .palestrantes{
-    background-color: var(--yellow-primary);
+
+   position: relative;
+   overflow-x: hidden;
 }
 
+.cardsContainer{
+   position: absolute;
+   z-index: 10;
+   top: 0;
+   left: 0;
+}
+.bg{
+     width: 100vw; 
+    min-height: 350vh; 
+    object-fit: fill;
+    /* position: absolute; 
+    z-index: 5; 
+    top: 0;
+    left: 0; */
+}
 
+/* .programacao{
+    background-image: url(/eleva-page/img/Rectangle\ 2.png);
+} */
 
 /*Úteis*/
 
