@@ -220,30 +220,6 @@ h2 {
     width: 100%;
     border-radius: 30px;
 }
-<<<<<<< HEAD
-
-.palestrantes{
-    background-image: url(/eleva-page/img/Rectangle.png);
-}
-
-.programacao{
-   background-image: url(/eleva-page/img/Rectangle\ 2.png);
-   padding-top: 0;
-}
-
-/* .card-1{
-    
-    background-color: var(--blue-primary);
-    border: var(--black);
-    box-shadow: 4px 4px 0 var(--black);
-    max-width: 17rem;
-    padding: 2rem 0 0 2rem;
-   
-    
-    align-self: end ;
-    background-color: var(--orange-secondary);
-=======
->>>>>>> b64e715ed8a8581d17bacfb4e5f6eef77cd6bda5
 
 .card-1{
     
