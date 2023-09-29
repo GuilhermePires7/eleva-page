@@ -175,7 +175,7 @@ nav a:hover{
 }
 .cards {
     width: 1180px;
-    height: 1942px;
+    height: 2180px;
     flex-shrink: 0; 
     border-radius: 59px;
     background: #FFF; 
@@ -191,6 +191,8 @@ nav a:hover{
 .cards img{
     padding-left: 10px;
 }
+
+
 .card {
     width: 300px;
     height: 380px;
@@ -218,7 +220,7 @@ nav a:hover{
 }
 .card-topo {
     width: 69%;
-    margin-top:2.5rem ;
+    margin-top:2.3rem ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -234,7 +236,7 @@ nav a:hover{
     flex-shrink: 0;
     border-radius: 40px;
     background: #00D1FF;
-    box-shadow: 9px 7px 8px 0px rgba(20, 99, 247, 0.25);
+    box-shadow: 9px 7px 10px 0px rgba(20, 99, 247, 0.25);
     border: 1px solid;
 }  
 .card-primary .img-palestrante {
@@ -254,7 +256,7 @@ nav a:hover{
 }
 
 .card-primary h4{
-    font-size: 17px;
+    font-size: 16px;
     color: #FFF;
 }
 
@@ -270,14 +272,14 @@ nav a:hover{
 }
 
 .card-primary p{
-    font-size: 16px;
+    font-size: 17px;
     color: #FFF;
     justify-content: right;
 }
 
 .card-primary img{
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
     margin-top: 10px;
     justify-content: right;
 
@@ -319,8 +321,8 @@ nav a:hover{
     justify-content: right;
 }
  .card-right{
-    width: 558px;
-    height: 606px;
+    width: 550px;
+    height: 500px;
     flex-shrink: 0;
     border-radius: 37px;
     background: #ED1167;
@@ -353,6 +355,8 @@ nav a:hover{
     font-size: 14px;
     color: #FFF;
 }
+
+
 .programation-section .programacao .decoration {
     display: block;
     position: relative; 
@@ -424,6 +428,7 @@ h2 {
 }
 
 
+
 /*Úteis*/
 
 .mt-1 {
@@ -458,6 +463,16 @@ h2 {
 .h1-white {
     color: var(--black);
 }
+
+
+p{
+    /* background-color: #00D1FF; */
+    text-align: justify !important;
+    max-width: 100%;
+    /* word-break: break-all; */
+    white-space: wrap;
+    padding: 0 20px;
+    }
 
 /*Responsividade*/
 @media screen and (min-width: 40rem) {
