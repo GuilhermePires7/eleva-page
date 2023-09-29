@@ -526,18 +526,116 @@ h2 {
 
 }
 
-/*  
-.carrossel{
-    max-width: 400px;
-    max-height: 800px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: var(--light-pink-primary);
+/* Carrossel CSS */
+.bodyCarrossel {
+  display: flex;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--purple-primary);
+  flex-direction: column;
 }
 
-.secCarrossel{
-    background-color: var(--light-pink-primary);
-}*/
+.turmaTitulo{
+    font-family: 'Skranji', cursive;
+    color: var(--white);
+    font-weight: bold;
+    text-shadow: 3px 3px 3px#000;
+}
+
+.wrapperCarrossel {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+}
+.wrapperCarrossel i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #FFF;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapperCarrossel i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapperCarrossel i:first-child{
+  left: -22px;
+}
+.wrapperCarrossel i:last-child{
+  right: -22px;
+}
+.wrapperCarrossel .carouselCarrossel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carouselCarrossel::-webkit-scrollbar {
+  display: none;
+}
+.carouselCarrossel.no-transition {
+  scroll-behavior: auto;
+}
+.carouselCarrossel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carouselCarrossel.dragging .cardCarrossel {
+  cursor: grab;
+  user-select: none;
+}
+.carouselCarrossel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carouselCarrossel .cardCarrossel {
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  background: var(--purple-primary);
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.carouselCarrossel .cardCarrossel .imgCarrossel {
+  background: var(--purple-secondary);
+  height: 315px;
+  width: 315px;
+  border-radius: 50%;
+}
+.cardCarrossel .imgCarrossel img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+
+
+@media screen and (max-width: 900px) {
+  .wrapperCarrossel .carouselCarrossel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapperCarrossel .carouselCarrossel {
+    grid-auto-columns: 100%;
+  }
+}
