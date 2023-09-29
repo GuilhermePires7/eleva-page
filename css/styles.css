@@ -164,21 +164,19 @@ nav a:hover{
     font-size: 3rem;
     line-height: 105% ;
     font-family: "Skranji", Open Sans;
-   color: #9B3D97;
-   font-size: 64px;
+    color: #9B3D97;
+    font-size: 64px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
     letter-spacing: 1.28px;
     text-transform: capitalize; 
-
 }
 .cards {
-    width: 1180px;
-    height: 2180px;
+    width: 85%;
     flex-shrink: 0; 
     border-radius: 59px;
-    background: #FFF; 
+    background: var(--white); 
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
@@ -191,7 +189,6 @@ nav a:hover{
 .cards img{
     padding-left: 10px;
 }
-
 
 .card {
     width: 300px;
@@ -355,7 +352,31 @@ nav a:hover{
     font-size: 14px;
     color: #FFF;
 }
+.programation-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.programation-section .programacao {
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    padding-left: 1.5rem;
+}
 
+.programacao {
+    width: 88%;
+    flex-shrink: 0; 
+    border-radius: 59px;
+    background: var(--white); 
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: -8rem ;
+    margin-bottom: 8rem;
+    align-items: center;
+    box-shadow: 9px 7px 8px 0px rgba(0, 76, 255, 0.25);
+}
 
 .programation-section .programacao .decoration {
     display: block;
@@ -431,6 +452,10 @@ h2 {
 
 /*Úteis*/
 
+.pb-3 {
+    padding-bottom: 3rem;
+}
+
 .mt-1 {
     margin-top: 1rem;
     align-items: center;
@@ -455,7 +480,7 @@ h2 {
     margin-right: auto;
 }
 .text-primary {
-    color: var(--white);
+    color: var(--pink-primary);
 }
 .text-center {
     text-align: center;
