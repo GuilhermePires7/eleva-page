@@ -33,30 +33,33 @@
 body {
     background: var(--light-blue-primary);
 }
+
+/****HEADER FORMATAÇÃO******/
 header {
-    width: 50%;
-    height: 80px;
+    margin: 25px 50px;
+    width: 45%;
+    height: 65px;
     padding: 0 5rem;
     border-radius: 84px;
     background: #F09;
-    box-shadow: 3px 4px 0px 0px #FFF;
+    box-shadow: 3px 3px 0px 0px #FFF;
 }
 header,
-.hero-section,
+.section-introducao,
 .programation-section,
-.courses-section
 footer {
+    padding: 1.25rem;
     /* border-color: var(--black);
     border-style: solid;
     border-width: 0 1px 1px 1px; */
-    padding: 1.25rem;
+    
 }
 /* Estilo Da logo */
-header img {
+/* header img {
     display: block;
     margin: 1rem auto;
-}
-/* .hero-section {
+} */
+/* .section-introducao {
      background: linear-gradient( var(--light-blue-primary),var(--blue-secondary),var(--white)); 
 } */
 /* .hero-course-linear {
@@ -77,22 +80,22 @@ header img {
 /* .programation-section {
     background: linear-gradient(  var(--purple-primary), var(--blue-heavy));
 } */
-.main-footer-linear {
+/* .main-footer-linear {
     border-style: none;
     height: 100px;
     background: linear-gradient( var(--blue-heavy) ,var(--blue-weak));
-}
+} */
 /* Estilo do grupo de 'links' */
 
-header nav {
+/* header nav {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 1rem auto 0 ;
-}
+    grid-template-columns: 1fr ;
+    margin: 1rem auto ;
+} */
 
-header nav a:nth-child(2n-1){
+/* header nav a:nth-child(2n-1){
     text-align: right;
-}
+} */
 
 nav a {
     color: var(--white);
@@ -101,7 +104,7 @@ nav a {
     padding: .5rem 1.2rem;
     text-decoration: none;
     font-family: 'Varela Round', sans-serif;
-    font-weight: 500;
+    font-weight: bold;
     
 }
 nav a:hover{
@@ -111,6 +114,32 @@ nav a:hover{
     transition: 0.5s;
 }
 
+/*****FORMATAÇÃO MAIN*******/
+.section-introducao {
+    padding-right: 0;
+    padding-bottom: 16rem;
+}
+.section-introducao img{
+    display: block;
+    margin: 1.25rem 0 0 auto;
+    max-width: 100%;
+}
+.section-introducao .button {
+    position: relative;
+}
+.section-introducao .button::after {
+    content: '';
+    background: url('../img/arrow-curve.svg');
+    position: absolute;
+    top: 5rem;
+    right: -4rem;
+    height: 48px;
+    width: 132px;
+}
+.section-introducao p {
+    font-size: 1.25rem;
+    padding-right:1.25rem;
+}
 .button {
     background-color: var(--orange-primary);
     border: 2px solid var(--black);
@@ -124,62 +153,24 @@ nav a:hover{
     text-decoration: none;
     text-transform: uppercase;
 }
-.hero-section {
-    padding-right: 0;
-    padding-bottom: 16rem;
+
+.section-palestrantes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
 }
-.hero-section img{
-    display: block;
-    margin: 1.25rem 0 0 auto;
-    max-width: 100%;
-}
-h1 span {
+.section-palestrantes .cards h1 span {
     font-size: 3rem;
     line-height: 105% ;
     font-family: "Skranji", Open Sans;
    color: #9B3D97;
    font-size: 64px;
-font-style: normal;
-font-weight: 900;
-line-height: normal;
-letter-spacing: 1.28px;
-text-transform: capitalize; 
-
-}
-h2 {
-    font-size: 2.5rem;
-}
-.hero-section .button {
-    position: relative;
-}
-.hero-section .button::after {
-    content: '';
-    background: url('../img/arrow-curve.svg');
-    position: absolute;
-    top: 5rem;
-    right: -4rem;
-    height: 48px;
-    width: 132px;
-}
-.decoration {
-    display: block;
-    position: relative; 
-}
-.decoration::after {
-    content: '';
-    background: url('../img/three-dashes.svg');
-    top:-0.75rem ;
-    position: absolute;
-    height:36px;
-    width:40px ;
-}
-.hero-section p {
-    font-size: 1.25rem;
-    padding-right:1.25rem;
-}
-
-.courses-section {
-    padding-bottom: 8rem ;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 1.28px;
+    text-transform: capitalize; 
 
 }
 .cards {
@@ -197,12 +188,6 @@ h2 {
     box-shadow: 9px 7px 8px 0px rgba(0, 76, 255, 0.25);
    
 }
-.cards-container1{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
 .cards img{
     padding-left: 10px;
 }
@@ -219,7 +204,7 @@ h2 {
 .card:hover {
     background-color: var(--light-blue-primary);
 }
-.card-1, .card-2, .card-3, .card-4 p {
+.card-primary, .card-left, .card-right, .card-4 p {
     text-align: center;
     color: var(--black);
     font-weight: bold;
@@ -231,28 +216,49 @@ h2 {
     margin-top: 20px;
     align-items: center;
 }
-.img-tre img{
-    width: 100%;
-    border-radius: 30px;
-}
-
- .card-1{
+.card-topo {
+    width: 69%;
+    margin-top:2.5rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
-    width: 959px;
+}
+.card-primary{
+    display: grid;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 69%;
     height: 466px;
     flex-shrink: 0;
     border-radius: 40px;
-background: #00D1FF;
-box-shadow: 9px 7px 8px 0px rgba(20, 99, 247, 0.25);
+    background: #00D1FF;
+    box-shadow: 9px 7px 8px 0px rgba(20, 99, 247, 0.25);
+    border: 1px solid;
 }  
+.card-primary .img-palestrante {
+    
+    width: 55%;
+    height: 80%;
+}
+.card-primary .img-palestrante img {
+    width: 100%;
+    height: 90%;
+   max-width: 100%;
+}
 
+.card-primary .card-content {
+    
+    width: 60%;
+}
 
-.card-1 h4{
+.card-primary h4{
     font-size: 17px;
     color: #FFF;
 }
 
-.card-1 h4 span{
+.card-primary h4 span{
     font-size: 17px;
     color: #EC4935;
     text-align: center;
@@ -263,13 +269,13 @@ box-shadow: 9px 7px 8px 0px rgba(20, 99, 247, 0.25);
     justify-content: right;
 }
 
-.card-1 p{
+.card-primary p{
     font-size: 16px;
     color: #FFF;
     justify-content: right;
 }
 
-.card-1 img{
+.card-primary img{
     width: 180px;
     height: 180px;
     margin-top: 10px;
@@ -277,7 +283,7 @@ box-shadow: 9px 7px 8px 0px rgba(20, 99, 247, 0.25);
 
 }
 
-.card-2{
+.card-left{
     width: 432px;
     height: 668px;
     flex-shrink: 0;
@@ -286,23 +292,23 @@ box-shadow: 9px 7px 8px 0px rgba(20, 99, 247, 0.25);
     box-shadow: 14px 8px 11px 0px rgba(114, 1, 134, 0.25);
 }
 
-.card-2 img{
+.card-left img{
     width: 180px;
     height: 180px;
     margin-top: 30px; 
 }
 
-.card-2 h4{
+.card-left h4{
     font-size: 16px;
     color: #FFF;
 }
 
-.card-2 p{
+.card-left p{
     font-size: 16px;
     color: #FFF;
 }
 
-.card-2 span{
+.card-left span{
     font-size: 16px;
     color: #F09;
     text-align: center;
@@ -312,7 +318,7 @@ box-shadow: 9px 7px 8px 0px rgba(20, 99, 247, 0.25);
     text-transform: uppercase;
     justify-content: right;
 }
- .card-3{
+ .card-right{
     width: 558px;
     height: 606px;
     flex-shrink: 0;
@@ -322,58 +328,17 @@ box-shadow: 9px 7px 8px 0px rgba(20, 99, 247, 0.25);
 
 }
 
-.card-3 img{
+.card-right img{
     width: 180px;
     height: 180px;
     margin-top: 30px;
 }
-
-
-.card-4{
-    width: 959px;
-    height: 466px;
-    flex-shrink: 0;
-    border-radius: 40px;
-background: #00D1FF;
-box-shadow: 9px 7px 8px 0px rgba(20, 99, 247, 0.25);
-} 
-
-/*h4 span{
-     font-family: "Exo 2", Opens Sans;
-    font-size: 20px;
-    color: #F09;
-    text-align: center;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.72px;
-    text-transform: uppercase;
-    justify-content: right;
-}
-h4{
-    font-family: "Exo 2", Opens Sans;
-    font-size: 20px;
-    color: #FFF;
-} */
-
-h3{
-    font-family: "Exo 2", Opens Sans;
-    color: #FFF;
-}
-
-p{
-    font-family: "Exo 2", Opens Sans;
-    font-size: 19px;
-    color: #FFF;
-    
-    
-}
-
-.card-3 h4{
+.card-right h4{
     font-size: 16px;
     color: #FFF;
 }
 
-.card-3 h4 span{
+.card-right h4 span{
     font-size: 16px;
     color: #0AA1DE;
     text-align: center;
@@ -384,94 +349,33 @@ p{
     justify-content: right;
 }
 
-.card-3 p{
+.card-right p{
     font-size: 14px;
     color: #FFF;
 }
-
-/* .card-5{
-    background-color: var(--red-primary);
-    border: var(--black);
-    box-shadow: 4px 4px 0 var(--black);
-    max-width: 17rem;
-    padding: 2rem 0 0 2rem;
-
-    align-self: end ;
-    background-color: var(--blue-secondary);
-
+.programation-section .programacao .decoration {
     display: block;
-    font-size: 1.3rem;
-    margin: 1rem 0;
-
-    display: block;
-    margin: 2rem 0 0 auto ;
-    width: fit-content;
-} */
-/* .card-6{
-    background-color: var(--purple-primary);
-    border: var(--black);
-    box-shadow: 4px 4px 0 var(--black);
-    max-width: 17rem;
-    padding: 2rem 0 0 2rem;
-
-    align-self: end ;
-    background-color: var(--light-pink-secondary);
-
-    display: block;
-    font-size: 1.3rem;
-    margin: 1rem 0;
-
-    display: block;
-    margin: 2rem 0 0 auto ;
-    width: fit-content;
-} */
-/* .card-7{
-    background-color: var(--blue-primary);
-    border: var(--black);
-    box-shadow: 4px 4px 0 var(--black);
-    max-width: 17rem;
-    padding: 2rem 0 0 2rem;
-
-    align-self: end ;
-    background-color: var(--orange-secondary);
-
-    display: block;
-    font-size: 1.3rem;
-    margin: 1rem 0;
-
-    display: block;
-    margin: 2rem 0 0 auto ;
-    width: fit-content;
-} */
-
-.imagem{
-    width: 108px;
-    height: 108px;
-    margin: 0 auto;
-    justify-content: center;
-    justify-items: center;
+    position: relative; 
+}
+.programation-section .programacao .decoration::after {
+    content: '';
+    background: url('../img/three-dashes.svg');
+    top:-0.75rem ;
+    position: absolute;
+    height:36px;
+    width:40px ;
 }
 .icons-programation {
     margin-top: 50px;
 }
-.textoT{
-    display: block;
-    font-size: 1.5rem;
-    margin: 1rem 0;
-    align-items: center;
-    text-align: center;
-}
-
-.ghost{
+.programation-section .icons-programation img.ghost{
     width: 90px;
     height: 90px;
     align-items:center;
     display:flex;
-   
-    
 }
 
-/*Rodapé*/
+/*******INICIO FOOTER******/
 footer {
     border-bottom: 0;
     padding: 0rem 1.25rem 2rem;
@@ -501,27 +405,22 @@ footer h3 {
     
 }
 
-.palestrantes{
-   max-width: 100vw;
-   min-height: 350vh;
-   position: relative;
-   overflow-x: hidden;
+
+/*FORMATAÇÃO GERAL*/
+h3{
+    font-family: "Exo 2", Opens Sans;
+    color: #FFF;
 }
 
-.cards-container{
-   position: absolute;
-   z-index: 2;
-   top: 0;
-   left: 0;
-   
+p{
+    font-family: "Exo 2", Opens Sans;
+    font-size: 19px;
+    color: #FFF;
+    
+    
 }
-.bg{
-     min-width: 100%; 
-    min-height: 100vh; 
-    object-fit: fill;
-    position: absolute; 
-    z-index: 1; 
-     top: 120px;
+h2 {
+    font-size: 2.5rem;
 }
 
 
@@ -532,20 +431,19 @@ footer h3 {
     align-items: center;
 }
 
-
 .mt-2 {
     margin-top: 2rem;
 }
-
 
 .mb-1 {
     margin-bottom: 1rem;
    
 }
-
-
 .mb-2 {
     margin-bottom: 2rem;
+}
+.mr-1{
+    margin-right: 1rem;
 }
 .mx-auto {
     margin-left: auto;
@@ -560,6 +458,7 @@ footer h3 {
 .h1-white {
     color: var(--black);
 }
+
 /*Responsividade*/
 @media screen and (min-width: 40rem) {
     header nav {
