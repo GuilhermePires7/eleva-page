@@ -144,6 +144,7 @@ font-weight: 900;
 line-height: normal;
 letter-spacing: 1.28px;
 text-transform: capitalize; 
+
 }
 h2 {
     font-size: 2.5rem;
@@ -193,8 +194,10 @@ h2 {
     margin-top: -8rem ;
     margin-bottom: 8rem;
     align-items: center;
+    box-shadow: 9px 7px 8px 0px rgba(0, 76, 255, 0.25);
+   
 }
-.cards-container{
+.cards-container1{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -233,15 +236,46 @@ h2 {
     border-radius: 30px;
 }
 
-.card-1{
+ .card-1{
     
     width: 959px;
     height: 466px;
     flex-shrink: 0;
     border-radius: 40px;
 background: #00D1FF;
-box-shadow: 9px 7px 8px 0px rgba(0, 0, 0, 0.25);
-} 
+box-shadow: 9px 7px 8px 0px rgba(20, 99, 247, 0.25);
+}  
+
+
+.card-1 h4{
+    font-size: 17px;
+    color: #FFF;
+}
+
+.card-1 h4 span{
+    font-size: 17px;
+    color: #EC4935;
+    text-align: center;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+    justify-content: right;
+}
+
+.card-1 p{
+    font-size: 16px;
+    color: #FFF;
+    justify-content: right;
+}
+
+.card-1 img{
+    width: 180px;
+    height: 180px;
+    margin-top: 10px;
+    justify-content: right;
+
+}
 
 .card-2{
     width: 432px;
@@ -249,13 +283,13 @@ box-shadow: 9px 7px 8px 0px rgba(0, 0, 0, 0.25);
     flex-shrink: 0;
     border-radius: 37px;
     background: #9B3D97;
-    box-shadow: 14px 8px 11px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 14px 8px 11px 0px rgba(114, 1, 134, 0.25);
 }
 
 .card-2 img{
     width: 180px;
     height: 180px;
-    margin-top: 10px; 
+    margin-top: 30px; 
 }
 
 .card-2 h4{
@@ -284,14 +318,14 @@ box-shadow: 9px 7px 8px 0px rgba(0, 0, 0, 0.25);
     flex-shrink: 0;
     border-radius: 37px;
     background: #ED1167;
-    box-shadow: 14px 8px 11px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 14px 8px 11px 0px rgba(213, 1, 132, 0.25);
 
 }
 
 .card-3 img{
     width: 180px;
     height: 180px;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 
@@ -301,10 +335,11 @@ box-shadow: 9px 7px 8px 0px rgba(0, 0, 0, 0.25);
     flex-shrink: 0;
     border-radius: 40px;
 background: #00D1FF;
-box-shadow: 9px 7px 8px 0px rgba(0, 0, 0, 0.23);
+box-shadow: 9px 7px 8px 0px rgba(20, 99, 247, 0.25);
 } 
 
-h4 span{
+/*h4 span{
+     font-family: "Exo 2", Opens Sans;
     font-size: 20px;
     color: #F09;
     text-align: center;
@@ -315,17 +350,22 @@ h4 span{
     justify-content: right;
 }
 h4{
+    font-family: "Exo 2", Opens Sans;
     font-size: 20px;
     color: #FFF;
-}
+} */
 
 h3{
+    font-family: "Exo 2", Opens Sans;
     color: #FFF;
 }
 
 p{
+    font-family: "Exo 2", Opens Sans;
     font-size: 19px;
     color: #FFF;
+    
+    
 }
 
 .card-3 h4{
