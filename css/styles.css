@@ -399,6 +399,60 @@ nav a:hover{
     align-items:center;
     display:flex;
 }
+/****** CARROSEL ******/
+.tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.tag {
+    background: var(--white);
+    border-radius: 3px 0 0 3px;
+    color: var(--purple-primary);
+    display: inline-block;
+    height: 36px;
+    line-height: 0px;
+    padding: 20px 20px 20px 23px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    -webkit-transition: color 0.2s;
+  }
+
+  .tag::before {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+    content: '';
+    height: 6px;
+    left: 10px;
+    position: absolute;
+    width: 6px;
+    top: 10px;
+  }
+  
+  .tag::after {
+    background: #fff;
+    border-bottom: 13px solid transparent;
+    border-left: 10px solid #eee;
+    border-top: 13px solid transparent;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .tag:hover {
+    background-color: crimson;
+    color: white;
+  }
+  
+  .tag:hover::after {
+     border-left-color: crimson; 
+  }
 
 /*******INICIO FOOTER******/
 footer {
@@ -645,7 +699,7 @@ p{
 }
 .carouselCarrossel .cardCarrossel {
   scroll-snap-align: start;
-  height: 342px;
+  height: 392px;
   list-style: none;
   background: var(--purple-primary);
   cursor: pointer;
