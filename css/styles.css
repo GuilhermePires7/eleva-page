@@ -227,37 +227,24 @@ nav a:hover{
     
 }
 .card-primary{
-    display: grid;
     display: flex;
-    justify-content:space-between;
-    align-items: center;
-    width: 69%;
-    height: 466px;
+    flex-direction: column;
+    width: 49%;
     flex-shrink: 0;
     border-radius: 40px;
     background: #00D1FF;
     box-shadow: 9px 7px 10px 0px rgba(20, 99, 247, 0.25);
-    border: 1px solid;
 }  
-.card-primary .img-palestrante {
-    
-    width: 55%;
-    height: 80%;
-}
+
 .card-primary .img-palestrante img {
     width: 100%;
-    height: 90%;
-   max-width: 100%;
 }
 
 .card-primary .card-content {
-    
-    width: 60%;
+    width: 90%;
 }
-
-.card-primary h4{
-    font-size: 16px;
-    color: #FFF;
+.content-description {
+    width: 100%;
 }
 
 .card-primary h4 span{
