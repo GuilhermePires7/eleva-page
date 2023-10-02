@@ -1,11 +1,9 @@
-
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
-
 :root {
     --brown-primary: #A27C16;
     --brown-secondary: #4A330F;
@@ -31,27 +29,29 @@
     --gray-primary: #959494;
     --gray-secondary: #242021;
     --white:#ebe5e5;
+    
 }
 body {
     background: var(--light-blue-primary);
 }
 
-
 /****HEADER FORMATAÇÃO******/
 header {
-    margin: 20px 50px;
+    margin: 25px 50px;
     width: 45%;
     height: 65px;
     padding: 0 5rem;
     border-radius: 84px;
     background: #F09;
     box-shadow: 3px 3px 0px 0px #FFF;
+    
 }
 header,
 .section-introducao,
 .programation-section,
 footer {
     padding: 1.25rem;
+  
     /* border-color: var(--black);
     border-style: solid;
     border-width: 0 1px 1px 1px; */
@@ -88,13 +88,15 @@ footer {
     height: 100px;
     background: linear-gradient( var(--blue-heavy) ,var(--blue-weak));
 } */
+
+
 /* Estilo do grupo de 'links' */
 
-/* header nav {
+header nav {
     display: grid;
-    grid-template-columns: 1fr ;
-    margin: 1rem auto ;
-} */
+    grid-template-columns: 1fr 1fr ;
+    margin: 1rem auto 0;
+} 
 
 /* header nav a:nth-child(2n-1){
     text-align: right;
@@ -174,6 +176,7 @@ nav a:hover{
     line-height: normal;
     letter-spacing: 1.28px;
     text-transform: capitalize; 
+    text-shadow: 3px 3px 3px#000;
 }
 .cards {
     width: 85%;
@@ -232,10 +235,19 @@ nav a:hover{
     width: 49%;
     flex-shrink: 0;
     border-radius: 40px;
-    background: #00D1FF;
-    box-shadow: 9px 7px 10px 0px rgba(20, 99, 247, 0.25);
+    background: var(--light-blue-primary);
+    box-shadow: 9px 7px 10px 0px rgba(0, 104, 133, 0.25);
+    border-top: 16px solid var(--blue-secondary);
+    border-right: 16px solid var(--blue-secondary);
+    
 }  
 
+.card-primary .img-palestrante {
+    
+    width: 37%;
+    height: 77%;
+   
+}
 .card-primary .img-palestrante img {
     width: 100%;
 }
@@ -246,6 +258,7 @@ nav a:hover{
 .content-description {
     width: 100%;
 }
+
 
 .card-primary h4 span{
     font-size: 17px;
@@ -339,7 +352,12 @@ nav a:hover{
 }
 
 .card-right p{
-    font-size: 14px;
+    font-size: 16px;
+    color: #FFF;
+}
+
+h5{
+    font-size: 16px;
     color: #FFF;
 }
 .programation-section {
@@ -389,7 +407,6 @@ nav a:hover{
     align-items:center;
     display:flex;
 }
-/****** CARROSEL ******/
 .tags {
     display: flex;
     flex-direction: row;
@@ -443,7 +460,6 @@ nav a:hover{
   .tag:hover::after {
      border-left-color: crimson; 
   }
-
 /*******INICIO FOOTER******/
 footer {
     border-bottom: 0;
@@ -545,7 +561,11 @@ p{
 
 /*Responsividade*/
 @media screen and (min-width: 40rem) {
-    
+    header nav {
+       display: flex;
+       text-align: center;
+       
+    }
     .cards {
         flex-direction: row;
         flex-wrap: wrap;
@@ -558,15 +578,7 @@ p{
 }
 @media screen and (max-width: 40rem) {
     header {
-        height: 13rem;
-        width: 100%;
-        margin: 0px;
-        border-radius: 0px;
-    }
-    header nav {
-        margin-top: 3rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        height: 200px;
     }
 }
 @media screen and (min-width: 40rem) {
@@ -586,14 +598,9 @@ p{
     h1,h2 {
         font-size: 4rem;
     }
-    header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 1rem auto 0;
-    }
+    
     .container {
         display: flex;  
-        flex-direction: row;
         align-items: center;
         margin: 0 auto;   
         max-width: 72rem;
@@ -699,7 +706,7 @@ p{
 }
 .carouselCarrossel .cardCarrossel {
   scroll-snap-align: start;
-  height: 392px;
+  height: 342px;
   list-style: none;
   background: var(--purple-primary);
   cursor: pointer;
