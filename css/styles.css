@@ -1,9 +1,11 @@
+
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
+
 :root {
     --brown-primary: #A27C16;
     --brown-secondary: #4A330F;
@@ -34,9 +36,10 @@ body {
     background: var(--light-blue-primary);
 }
 
+
 /****HEADER FORMATAÇÃO******/
 header {
-    margin: 25px 50px;
+    margin: 20px 50px;
     width: 45%;
     height: 65px;
     padding: 0 5rem;
@@ -555,10 +558,7 @@ p{
 
 /*Responsividade*/
 @media screen and (min-width: 40rem) {
-    header nav {
-       display: block;
-       text-align: center;
-    }
+    
     .cards {
         flex-direction: row;
         flex-wrap: wrap;
@@ -571,7 +571,15 @@ p{
 }
 @media screen and (max-width: 40rem) {
     header {
-        height: 200px;
+        height: 13rem;
+        width: 100%;
+        margin: 0px;
+        border-radius: 0px;
+    }
+    header nav {
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 @media screen and (min-width: 40rem) {
@@ -591,9 +599,14 @@ p{
     h1,h2 {
         font-size: 4rem;
     }
-    
+    header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem auto 0;
+    }
     .container {
         display: flex;  
+        flex-direction: row;
         align-items: center;
         margin: 0 auto;   
         max-width: 72rem;
