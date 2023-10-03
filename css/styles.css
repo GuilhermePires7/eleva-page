@@ -166,11 +166,10 @@ nav a:hover{
     margin-top: 4rem;
 }
 .section-palestrantes .cards h1 span {
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 105% ;
     font-family: "Skranji", Open Sans;
     color: #9B3D97;
-    font-size: 64px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
@@ -401,7 +400,8 @@ nav a:hover{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 2rem;
+    font-weight: bold;
 }
 
 .tag {
@@ -554,6 +554,7 @@ p{
        display: flex;
        text-align: center;
        
+       
     }
     .cards {
         flex-direction: row;
@@ -582,8 +583,11 @@ p{
     }
     .card-primary, .card-left, .card-right, .card-topo {
         width: 97%;
+        margin-bottom:1.5rem ;
     }
-    
+    .section-palestrantes .cards h1 span {
+        font-size: 3rem;
+    }
 }
 @media screen and (min-width: 40rem) {
     header div {
@@ -634,7 +638,7 @@ p{
 /* Carrossel CSS */
 .bodyCarrossel {
   display: flex;
-  padding: 0 35px; 
+  padding: 0 40px; 
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -710,11 +714,12 @@ p{
 }
 .carouselCarrossel .cardCarrossel {
   scroll-snap-align: start;
-  height: 342px;
+  height: 27rem;
   list-style: none;
   background: var(--purple-primary);
   cursor: pointer;
   padding-bottom: 15px;
+  padding-left: 1.4rem;
   flex-direction: column;
   border-radius: 8px;
 }
