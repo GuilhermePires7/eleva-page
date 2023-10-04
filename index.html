@@ -25,15 +25,72 @@
 
 <body>
   <header>
-    <div class="container">
+
+    <nav id="navbar">
+      <a class="navbar-logo" href="index.html">
+          <img src="img/logo1.svg" alt="Logo">
+      </a>
+
+      <ul class="navbar-list">
+          <li class="navbar-item"><a href="#section-introducao" class="navbar-link">Início</a></li>
+          <li class="navbar-item"><a href="#section-palestrantes" class="navbar-link">Palestrantes</a></li>
+          <li class="navbar-item"><a href="#progrmationsection" class="navbar-link">Programação</a></li>
+          <li class="navbar-item"><a href="#turma" class="navbar-link" id="link-plans">Turma</a></li>
+      </ul>
+
+      <div class="menu">
+          <span class="menu-bar"></span>
+      </div>
+
+      <div class="nav-mobile">
+          <ul class="nav-mobile--list">
+              <li class="nav-mobile--list--item">
+                  <a href="#section-introducao" class="navbar-link">
+                      Início
+                  </a>
+              </li>
+              <li class="nav-mobile--list--item">
+                  <a href="#section-palestrantes" class="navbar-link">
+                    Palestrantes
+                  </a>
+              </li>
+              <li class="nav-mobile--list--item">
+                  <a href="#progrmationsection" class="navbar-link">
+                    Programação
+                  </a>
+              </li>
+              <li class="nav-mobile--list--item">
+                  <a href="#turma" class="navbar-link" id="link-plans">
+                    Turma
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+    <!-- <div class="container">
       <nav>
         <a href="#introduçãoLink">Introdução</a>
         <a href="#palestrantesLink">Palestrantes</a>
         <a href="#programaçãoLink">Programação</a>
         <a href="#turmaLink">Turma</a>
       </nav>
-      <!-- <a href="#" class="button mt-1 mb-1 mx-auto">Se inscreva</a> -->
-    </div>
+       <a href="#" class="button mt-1 mb-1 mx-auto">Se inscreva</a> 
+    </div> -->
+   <div id="menu">
+      <div id="menu-bar" onclick="menuOnClick()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav> 
+    </div> 
   </header>
 
   <main>
@@ -556,15 +613,6 @@
                
               </div>
             </li>
-            <li class="cardCarrossel">
-              <div class="imgCarrossel">
-                <img src="img/aluno32.jpeg" alt="img" draggable="false" />
-                <div class="tags">
-                  <a href="#turma" class="tag">HTML</a>
-                <a href="#turma" class="tag">CSS</a>
-                </div>
-                
-              </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
@@ -671,6 +719,36 @@
                 <img src="img/aluno-43.jpg" alt="img" draggable="false" />
                 <div class="tags">
                   <a href="#turma" class="tag">Maria Ariane</a>
+                <a href="#turma" class="tag">Level 16</a>
+                </div>
+                
+              </div>
+            </li>
+            <li class="cardCarrossel">
+              <div class="imgCarrossel">
+                <img src="img/sem-foto.png" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Sofia Pinto</a>
+                <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
+              </div>
+            </li>
+            <li class="cardCarrossel">
+              <div class="imgCarrossel">
+                <img src="img/sem-foto.png" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Cauã Maia</a>
+                <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
+              </div>
+            </li>
+            <li class="cardCarrossel">
+              <div class="imgCarrossel">
+                <img src="img/sem-foto.png" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Ana Dalyla</a>
                 <a href="#turma" class="tag">Level 16</a>
                 </div>
                 
