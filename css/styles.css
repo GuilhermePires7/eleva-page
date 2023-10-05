@@ -445,15 +445,13 @@ nav a:hover{
 .card:hover {
     background-color: var(--light-blue-primary);
 }
-.card-primary, .card-left, .card-right, .card-4 p {
+.card-primary, .card-left, .card-right {
     text-align: center;
-    color: var(--black);
     font-weight: bold;
     font-size: 1.5rem;
+    padding: 2rem;
     text-overflow:ellipsis;
     white-space: nowrap;
-    overflow: hidden;
-    height: 400px;
     margin-top: 20px;
     align-items: center;
 }
@@ -469,7 +467,7 @@ nav a:hover{
 .card-primary{
     display: flex;
     flex-direction: column;
-    width: 69%;
+    width: 45%;
     height: auto;
     flex-shrink: 0;
     border-radius: 40px;
@@ -482,19 +480,27 @@ nav a:hover{
 .card-primary .img-palestrante img {
     width: 100%;
 }
-.card-primary .card-content {
-    width: 90%;
+.card-content {
+  padding-top: 1.5rem;
+  width: 100%;
 }
-.card-primary .card-content p {
-    /* padding-bottom:20px ; */
+.card-content h3 {
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+  
 }
-.format-text-h3 {
+.format-text-p {
+    word-wrap: break-word;
     font-style: italic;
     font-weight: bold;
     text-shadow: 2px 3px 3px var(--black); 
 }
 .card-primary .content-description {
     width: 100%;
+}
+p.p-title {
+  font-size: 1.4rem!important;
+  text-align: center!important;
 }
 .content-description p {
     padding: 0.5rem;
@@ -691,7 +697,7 @@ nav a:hover{
 footer {
     border-bottom: 0;
     padding: 2.5rem 2rem;
-    background: linear-gradient( var(--blue-weak),var(--blue-weak));
+    background-color: var(--black);
     font-family: 'Varela Round', sans-serif;
     /* border-color: var(--black);
 
@@ -702,6 +708,9 @@ footer {
 footer nav a {
     display: block;
     align-items: center;
+}
+footer .about-column img {
+  width: 30%;
 }
 /*Estilo dos links*/
 footer a:hover {
@@ -768,7 +777,7 @@ h2 {
     margin-right: auto;
 }
 .text-primary {
-    color: var(--pink-primary);
+    color: var(--pink-heavy);
 }
 .text-center {
     text-align: center;
@@ -824,11 +833,14 @@ p{
         width: 99%;
     }
     .card-primary, .card-left, .card-right, .card-topo {
-        width: 97%;
+        width: 98%;
         margin-bottom:1.5rem ;
     }
     .section-palestrantes .cards h1 span {
         font-size: 3rem;
+    }
+    .carouselCarrossel .cardCarrossel {
+      padding-left:1.2rem!important ;
     }
 }
 @media screen and (min-width: 40rem) {
@@ -842,13 +854,26 @@ p{
     header .button {
         margin: 0;
     }
+    .cards {
+      flex-wrap: wrap;
+    }
     
+    
+}
+@media screen and (max-width: 55rem) {
+   .card-primary, .card-left, .card-right, .card-topo {
+      width: 97%;
+      margin-bottom:1.5rem ;
+  }
+  .section-palestrantes .cards h1 span {
+      font-size: 3rem;
+  } 
 }
 @media screen and (min-width: 72rem) {
     h1,h2 {
         font-size: 4rem;
     }
-   
+    
     .container {
         display: flex;  
         align-items: center;
