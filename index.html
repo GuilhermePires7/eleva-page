@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Landing-pagee</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  
   <!-- FontAwesome para alguns Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -21,6 +21,15 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Combo&family=Concert+One&family=Exo+2&family=Gugi&family=Kdam+Thmor+Pro&family=Montserrat&family=Oswald:wght@300&family=Skranji&family=Teko:wght@300&family=Ubuntu:wght@300&display=swap"
     rel="stylesheet" />
+    <!--GOOGLE FONTS MOINT SERRAR-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;0,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1.900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+
 </head>
 
 <body>
@@ -101,12 +110,16 @@
       <div class="container row-reverse">
         <!-- <img src="img/cruz.svg">
                       <img src="img/cruzP.svg"> -->
-
-        <img src="img/hero-img.svg" alt="Banda de Jazz tocando" />
-        <div>
-          <h1 class="mt-2 text-h1 h1-white">
+          <div class="img-principal">
+            <img src="img/ds-fundo.png" alt="Banda de Jazz tocando" />
+          </div>
+        
+        <div class="introduction-content">
+          <h1 class="mt-2 text-h1">
             Crie algo
-            <span class="text-primary decoration">Impactante</span> com música
+            Impactante 
+            Com 
+            Música
           </h1>
           <p class="mt-2 mb-2 text-h1 h1-white">
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -122,40 +135,29 @@
     <!--SECTION DE TODOS OS PALESTRANSTES DO EVENTO-->
     <section class="section-palestrantes">
       <div class="cards pb-3">
-        <div class="card-topo">
-          <img class="mr-1" src="img/Group 7.svg" alt="icon-livro">
-          <h1 class="text-center"><span>PALESTRANTES</span></h1>
+        <div class="card-topo mb-2">
+          <!-- <img class="mr-1" src="img/Group 7.svg" alt="icon-livro"> -->
+          <h1 class="text-center"><span>Palestrantes</span></h1>
         </div>
 
-        <div class="card-primary">
-
+        <div class="card-primary ">
           <div class="img-palestrante">
             <img src="img/Mateus.png" >
           </div>
 
-          <div class="card-content format-text-p">
+          <div class="card-content ">
             <p class="mb-1 p-title">MATEUS SOUSA MARTINS</p>
             <div class="content-description">
-              <p>Tornando-se um Ninja em Python</p>
+              <p class="text-upercase mb-1">Tornando-se um Ninja em Python</p>
               <p>"Olá a todos, eu sou o Mateus, sou apaxionado
                 por tecnologia e pelo mundo do Linux que
                 é o que me impulsiona, trabalho como
                 desenvolvedor de software com foco em
-                desenvolvimento backend e automação web.
+                desenvolvimento backend e automação web. 
                 Além de ser um técnico em redes de
                 computadores, estou atualmente técnico
                 em Desenvolvimento de Sistemas na Unicorp".</p>
             </div>
-            <!-- <h4><span><br />TITULO DA PALESTRA: </span> <br />Tornando-se um Ninja em Python: <br />Dominando a
-              Linguagem da Serpente<br /></h4>
-            <p> <br />"Olá a todos, eu sou o Mateus, sou apaxionado
-              por tecnologia e pelo mundo do Linux que
-              é o que me impulsiona, trabalho como
-              desenvolvedor de software com foco em
-              desenvolvimento backend e automação web.
-              Além de ser um técnico em redes de
-              computadores, estou atualmente técnico
-              em Desenvolvimento de Sistemas na Unicorp".</p> -->
           </div>
 
         </div>
@@ -165,31 +167,26 @@
               <img src="img/Fernando.png" alt="">
             </div>
 
-            <div class="card-content format-text-p">
-              <p class="p-title">FERNANDO SANTANA SANTOS</p>
+            <div class="card-content">
+              <p class="p-title mb-1">FERNANDO SANTANA SANTOS</p>
               <div class="content-description">
-                <p>Tornando-se um Ninja em Python</p>
-                <p>"Olá a todos, eu sou o Mateus, sou apaxionado
-                  por tecnologia e pelo mundo do Linux que
-                  é o que me impulsiona, trabalho como
-                  desenvolvedor de software com foco em
-                  desenvolvimento backend e automação web.
-                  Além de ser um técnico em redes de
-                  computadores, estou atualmente técnico
-                  em Desenvolvimento de Sistemas na Unicorp".</p>
+                <p class="text-upercase mb-2">Tornando-se um Ninja em Python</p>
+                <p>"Fala pessoal, me chamo Fernando, sou formado em sistemas de informação e estou cursando pós graduação em engenharia de software, trabalho com tecnologia há cerca de 4 anos como 
+                  desenvolvedor de software, projetando e estando presente em todas a fases do desenvolvimento de diversos produtos, trabalhei desde fábrica 
+                  de softwares até multinacionais sempre proporcionando o melhor que a tecnologia tem a oferecer, nos vemos em breve!".</p>
               </div>
             </div>
         </div>
 
-        <div class="card-right">
+        <div class="card-right ">
           <div class="img-palestrante">
             <img src="img/Rogerio.png" alt="">
           </div>
 
-          <div class="card-content format-text-p">
-            <p class="p-title">ROGERIO ALENCAR FILHO</p>
+          <div class="card-content ">
+            <p class="p-title mb-1">ROGERIO ALENCAR FILHO</p>
             <div class="content-description">
-              <p>Tornando-se um Ninja em Python</p>
+              <p text-upercase mb-1>INTERNET DAS COISAS E DOMANDO O DRAGÃO</p>
               <p>"Olá a todos, eu sou o Mateus, sou apaxionado
                   por tecnologia e pelo mundo do Linux que
                   é o que me impulsiona, trabalho como
@@ -202,23 +199,17 @@
           </div>
         </div>
 
-        <div class="card-right format-text-p">
+        <div class="card-primary">
           <div class="img-palestrante">
             <img src="img/Israel.png" alt="">
           </div>
           
           <div class="card-content">
-            <p class="p-title">ISRAEL DANTAS LEITE</p>
+            <p class="p-title mb-1">ISRAEL DANTAS LEITE</p>
             <div class="content-description">
-              <p>Tornando-se um Ninja em Python</p>
-              <p>"Olá a todos, eu sou o Mateus, sou apaxionado
-                  por tecnologia e pelo mundo do Linux que
-                  é o que me impulsiona, trabalho como
-                  desenvolvedor de software com foco em
-                  desenvolvimento backend e automação web.
-                  Além de ser um técnico em redes de
-                  computadores, estou atualmente técnico
-                  em Desenvolvimento de Sistemas na Unicorp".</p>
+              <p class="text-upercase mb-1">Tech Lead na DASA</p>
+              <p>"Liderando equipes técnicas. Este profissional é uma ponte entre a visão estratégica da empresa e a implementação técnica,
+                tomando decisões críticas para o sucesso dos projetos. Experiência com cloud computing, transformação digital, modernização de aplicações, ambientes criticos e eficiência de aplicações".</p>
             </div>
           </div>
           
@@ -233,33 +224,41 @@
             de aplicações, ambientes criticos e eficiência de aplicações.</p> -->
         </div>
 
-        <div class="card-left format-text-p">
+        <div class="card-left ">
           <div class="img-palestrante">
             <img src="img/Maria Eduarda.png" alt="">
           </div>
           
           <div class="card-content">
-            <p class="p-title">MARIA EDUARDA LIMA SARAIVA</p>
+            <p class="p-title mb-1">MARIA EDUARDA LIMA SARAIVA</p>
             <div class="content-description">
-              <p>Tornando-se um Ninja em Python</p>
-              <p>"Olá a todos, eu sou o Mateus, sou apaxionado
-                  por tecnologia e pelo mundo do Linux que
-                  é o que me impulsiona, trabalho como
-                  desenvolvedor de software com foco em
-                  desenvolvimento backend e automação web.
-                  Além de ser um técnico em redes de
-                  computadores, estou atualmente técnico
-                  em Desenvolvimento de Sistemas na Unicorp".</p>
+              <p>QA LEAD NO FITBANK</p>
+              <p>ACADÊMICA EM CIÊNCIAS EM COMPUTAÇÃO NA UNIVERSIDADE FEDERAL DO CEARÁ</p>
             </div>
           </div>
           
           <!-- <h4>PALESTRANTE</h4>
           <h5><br />QA Lead no FitBank</h5>
           <h5>Ciência da Computação na UFC</h5> -->
-          <P></P>
+          
 
         </div>
 
+        <div class="card-right">
+          <div class="img-palestrante">
+            <img src="img/davyla-palestrante.jpg" alt="Davyla-Palestrante">
+          </div>
+          
+          <div class="card-content">
+            <p class="p-title mb-1">ISRAEL DANTAS LEITE</p>
+            <div class="content-description">
+              <p>DOMINANDO E ENTENDENDO O SCRUM
+              </p>
+              <p>" Especialista em Gestão de projetos e metodologia Ágil. Carreira desenvolvida na área de Tecnologia da Informação, com ampla experiência no gerenciamento de projetos, planejamento 
+                e desenvolvimento de sistemas, gestão de equipes e implementação de melhorias ."</p>
+            </div>
+          </div>
+        </div>
         <!-- <div class="card-content">
                   <h3>MATEUS SOUSA MARTINS</h3>
                   <h4>PALESTRANTE</h4>

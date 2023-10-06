@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -15,25 +15,27 @@
     --red-secondary: #EC4935;
     --light-pink-primary: #F9C4D8;
     --light-pink-secondary: #F391BC;
-    --pink-primary: #ED1167;
+    --pink-primary: #a91950;
     --pink-heavy:#ED1167;
     --pink-secondary: #cf5e79;
-    --light-blue-primary: #35C5F0;
+    --light-blue-primary: #2acfff;
     --light-blue-secondary: #0AA1DE;
     --blue-primary: #2097D4;
     --blue-secondary: #177DAF;
     --blue-heavy: #175ec0;
     --blue-weak:#4994fc;
+    --blue-weak-heavy:#00475b;
     --purple-primary: #9B3D97;
     --purple-secondary: #672D8F;
+    --purple-weavy:#6f0678;
     --black:#000;
     --gray-primary: #959494;
     --gray-secondary: #242021;
-    --white:#ebe5e5;
+    --white:#ffffff;
     
 }
 body {
-    background: var(--light-blue-primary);
+    background: var(--white);
 }
 header,
 .section-introducao,
@@ -267,14 +269,12 @@ nav a:hover{
     z-index: 2;
     display: none;
   }
-  
   #menu-bar {
     width: 45px;
     height: 40px;
     margin: 30px 0 20px 20px;
     cursor: pointer;
   }
-  
   .bar {
     height: 5px;
     width: 100%;
@@ -358,7 +358,7 @@ nav a:hover{
     transform: translate(-60%,-30%);
   }
 /*****FORMATAÇÃO MAIN*******/
-.section-introducao {
+.section-introducao {  
     padding-right: 0;
     padding-bottom: 16rem;
 }
@@ -366,6 +366,12 @@ nav a:hover{
     display: block;
     margin: 1.25rem 0 0 auto;
     max-width: 100%;
+}
+.img-principal {
+  width: auto;
+  height: auto;
+  background-color: var(--purple-weavy);
+  border-radius: 20px;
 }
 .section-introducao .button {
     position: relative;
@@ -379,15 +385,26 @@ nav a:hover{
     height: 48px;
     width: 132px;
 }
+.introduction-content {
+  margin-right: 3rem;
+}
+.section-introducao .container .introduction-content h1{
+    color: var(--purple-weavy);
+    font-family: 'Montserrat';
+    font-weight: 900;
+    letter-spacing:-2px;
+
+}
 .section-introducao p {
-    font-size: 1.25rem;
-    padding-right:1.25rem;
+    color: var(--purple-weavy);
+    font-style: italic;
+    font-weight: 400;
 }
 .button {
-    background-color: var(--orange-primary);
+    background-color: var(--purple-weavy);
     border: 2px solid var(--black);
     box-shadow: 4px 4px 0 var(--black);
-    color: var(--black);
+    color: var(--white);
     display: block;
     font-size: 1.25rem;
     padding: .75rem 1rem;
@@ -405,15 +422,12 @@ nav a:hover{
 }
 .section-palestrantes .cards h1 span {
     font-size: 4rem;
-    line-height: 105% ;
-    font-family: "Skranji", Open Sans;
-    color: #9B3D97;
-    font-style: normal;
+    line-height: 105%;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--purple-weavy);
     font-weight: 900;
-    line-height: normal;
-    letter-spacing: 1.28px;
+    letter-spacing: -2px;
     text-transform: capitalize; 
-    text-shadow: 3px 3px 3px#000;
 }
 .cards {
     width: 85%;
@@ -426,7 +440,7 @@ nav a:hover{
     margin-top: -8rem ;
     margin-bottom: 8rem;
     align-items: center;
-    box-shadow: 9px 7px 8px 0px rgba(0, 76, 255, 0.25);
+    box-shadow: 9px 7px 8px 8px rgba(0, 76, 255, 0.25);
    
 }
 .cards img{
@@ -439,21 +453,24 @@ nav a:hover{
     border-radius: 20px;
     padding: 15px;
     font-size:20px;
-    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.2)!important;
+    box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.2)!important;
     border: none!important;
 }
 .card:hover {
     background-color: var(--light-blue-primary);
 }
 .card-primary, .card-left, .card-right {
+  font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
     padding: 2rem;
     text-overflow:ellipsis;
+    letter-spacing: 1px;
     white-space: nowrap;
     margin-top: 20px;
     align-items: center;
+    
 }
 .card-topo {
     width: 69%;
@@ -471,10 +488,10 @@ nav a:hover{
     height: auto;
     flex-shrink: 0;
     border-radius: 40px;
-    background: var(--light-blue-primary);
+    background:  var(--blue-heavy);
     box-shadow: 9px 7px 10px 0px rgba(0, 104, 133, 0.25);
-    border-top: 16px solid var(--blue-secondary);
-    border-right: 16px solid var(--blue-secondary);
+    border-top: 16px solid var(--blue-weak);
+    border-right: 16px solid var(--blue-weak);
     
 }  
 .card-primary .img-palestrante img {
@@ -527,12 +544,16 @@ p.p-title {
     justify-content: right;
 }
 .card-left{
-    width: 35%;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
     height: auto;
     flex-shrink: 0;
-    border-radius: 37px;
-    background: #9B3D97;
+    border-radius: 40px;
+    background: var(--purple-secondary);
     box-shadow: 14px 8px 11px 0px rgba(114, 1, 134, 0.25);
+    border-top: 16px solid var(--purple-weavy);
+    border-right: 16px solid var(--purple-weavy);
 }
 .card-left img{
     width: 180px;
@@ -558,33 +579,21 @@ p.p-title {
     justify-content: right;
 }
  .card-right{
-    width: 40%;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
     height: auto;
     flex-shrink: 0;
-    border-radius: 37px;
+    border-radius: 40px;
     background: var(--pink-heavy);
     box-shadow: 14px 8px 11px 0px rgba(213, 1, 132, 0.25);
-
+    border-top: 16px solid var(--pink-primary);
+    border-right: 16px solid var(--pink-primary);
 }
 .card-right img{
     width: 180px;
     height: 180px;
     margin-top: 30px;
-}
-.card-right h4{
-    font-size: 16px;
-    color: #FFF;
-}
-
-.card-right h4 span{
-    font-size: 16px;
-    color: #0AA1DE;
-    text-align: center;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.72px;
-    text-transform: uppercase;
-    justify-content: right;
 }
 
 .card-right p{
@@ -777,10 +786,14 @@ h2 {
     margin-right: auto;
 }
 .text-primary {
-    color: var(--pink-heavy);
+    color: var(--white);
 }
 .text-center {
     text-align: center;
+    text-transform: uppercase;
+}
+.text-upercase {
+  text-transform: uppercase;
 }
 .h1-white {
     color: var(--black);
@@ -828,7 +841,32 @@ p{
     header nav a{
         margin-left: 2.5rem;
     }
-    
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+    }
+    .img-principal {
+      width: auto;
+      height: auto;
+      background-color: var(--purple-weavy);
+      border-radius: 20px;
+      margin-right: 1rem;
+      margin-top: 2.5rem;
+      
+    }
+    .introduction-content {
+      margin-top: 1.5rem;
+    }
+    .button {
+      margin-top: 4.5rem;
+    }
+    /* .section-introducao img {
+      
+      width: 100%;
+    } */
     .cards {
         width: 99%;
     }
