@@ -444,15 +444,11 @@ nav a:hover{
     margin-top: -8rem ;
     margin-bottom: 8rem;
     align-items: center;
-<<<<<<< HEAD
     box-shadow: 9px 7px 8px 0px rgba(0, 76, 255, 0.25);
     position: relative;
     z-index: 10;
     top: 200px;
    /* max-width: 359px; */
-=======
-    box-shadow: 9px 7px 8px 8px rgba(0, 76, 255, 0.25);
->>>>>>> f793bad21c710357bdb356b491b6a01073ba1227
    
 }
 
@@ -593,20 +589,14 @@ p.p-title {
     justify-content: right;
 }
  .card-right{
-<<<<<<< HEAD
-<<<<<<< HEAD
     width: 432px;
     height: 606px;
-=======
     width: 550px;
     height: 500px;
->>>>>>> 3cc6309fa136e44831e6136e9e6d812e024ee3bd
-=======
     display: flex;
     flex-direction: column;
     width: 45%;
     height: auto;
->>>>>>> f793bad21c710357bdb356b491b6a01073ba1227
     flex-shrink: 0;
     border-radius: 40px;
     background: var(--pink-heavy);
@@ -624,8 +614,6 @@ p.p-title {
     font-size: 16px;
     color: #FFF;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 .palestrantes{
     max-width: 100vw;
     min-height: 350vh;
@@ -644,10 +632,6 @@ p.p-title {
 }
 
  /* PROGRAMAÇÃO*/
-=======
-=======
-
->>>>>>> f793bad21c710357bdb356b491b6a01073ba1227
 .programation-section {
     display: flex;
     justify-content: center;
@@ -673,8 +657,6 @@ p.p-title {
     align-items: center;
     box-shadow: 9px 7px 8px 0px rgba(0, 76, 255, 0.25);
 }
-
->>>>>>> 3cc6309fa136e44831e6136e9e6d812e024ee3bd
 .programation-section .programacao .decoration {
     display: block;
     position: relative; 
@@ -878,11 +860,9 @@ p{
 }
 @media screen and (max-width: 40rem) {
     header {
-<<<<<<< HEAD
         height: 120px;
         width: 200px;
         align-self:baseline;
-=======
         margin: 0;
         height: auto;
         width: 100%;
@@ -932,7 +912,6 @@ p{
     }
     .carouselCarrossel .cardCarrossel {
       padding-left:1.2rem!important ;
->>>>>>> f793bad21c710357bdb356b491b6a01073ba1227
     }
 }
 @media screen and (min-width: 40rem) {
@@ -946,8 +925,6 @@ p{
     header .button {
         margin: 0;
     }
-<<<<<<< HEAD
-=======
     .cards {
       flex-wrap: wrap;
     }
@@ -962,7 +939,6 @@ p{
   .section-palestrantes .cards h1 span {
       font-size: 3rem;
   } 
->>>>>>> f793bad21c710357bdb356b491b6a01073ba1227
 }
 @media screen and (min-width: 72rem) {
     h1,h2,h4 {
@@ -997,7 +973,6 @@ p{
 
 }
 
-<<<<<<< HEAD
 /* @media screen and (min-width:320rem) {
     .cards{
         display: flex;  
@@ -1110,11 +1085,10 @@ p{
   min-height: 100vh;
   background: var(--purple-primary);
   flex-direction: column;
->>>>>>> 3cc6309fa136e44831e6136e9e6d812e024ee3bd
 }
 
 .turmaTitulo{
-    font-family: 'Skranji', cursive;
+    font-family: 'Skranji';
     color: var(--white);
     font-weight: bold;
     text-shadow: 3px 3px 3px#000;
