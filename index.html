@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Landing-pagee</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  
   <!-- FontAwesome para alguns Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -21,19 +21,85 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Combo&family=Concert+One&family=Exo+2&family=Gugi&family=Kdam+Thmor+Pro&family=Montserrat&family=Oswald:wght@300&family=Skranji&family=Teko:wght@300&family=Ubuntu:wght@300&display=swap"
     rel="stylesheet" />
+    <!--GOOGLE FONTS MOINT SERRAR-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;0,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1.900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+
 </head>
 
 <body>
   <header>
-    <div class="container">
+
+    <nav id="navbar">
+      <a class="navbar-logo" href="index.html">
+          <img src="img/logo-ds.jpg" alt="Logo">
+      </a>
+
+      <ul class="navbar-list">
+          <li class="navbar-item"><a href="#section-introducao" class="navbar-link">Início</a></li>
+          <li class="navbar-item"><a href="#section-palestrantes" class="navbar-link">Palestrantes</a></li>
+          <li class="navbar-item"><a href="#progrmationsection" class="navbar-link">Programação</a></li>
+          <li class="navbar-item"><a href="#turma" class="navbar-link" id="link-plans">Turma</a></li>
+      </ul>
+
+      <div class="menu">
+          <span class="menu-bar"></span>
+      </div>
+
+      <div class="nav-mobile">
+          <ul class="nav-mobile--list">
+              <li class="nav-mobile--list--item">
+                  <a href="#section-introducao" class="navbar-link">
+                      Início
+                  </a>
+              </li>
+              <li class="nav-mobile--list--item">
+                  <a href="#section-palestrantes" class="navbar-link">
+                    Palestrantes
+                  </a>
+              </li>
+              <li class="nav-mobile--list--item">
+                  <a href="#progrmationsection" class="navbar-link">
+                    Programação
+                  </a>
+              </li>
+              <li class="nav-mobile--list--item">
+                  <a href="#turma" class="navbar-link" id="link-plans">
+                    Turma
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+    <!-- <div class="container">
       <nav>
         <a href="#introduçãoLink">Introdução</a>
         <a href="#palestrantesLink">Palestrantes</a>
         <a href="#programaçãoLink">Programação</a>
         <a href="#turmaLink">Turma</a>
       </nav>
-      <!-- <a href="#" class="button mt-1 mb-1 mx-auto">Se inscreva</a> -->
-    </div>
+       <a href="#" class="button mt-1 mb-1 mx-auto">Se inscreva</a> 
+    </div> -->
+   <div id="menu">
+      <div id="menu-bar" onclick="menuOnClick()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav> 
+    </div> 
   </header>
 
   <main>
@@ -44,12 +110,17 @@
       <div class="container row-reverse">
         <!-- <img src="img/cruz.svg">
                       <img src="img/cruzP.svg"> -->
-
-        <img src="img/hero-img.svg" alt="Banda de Jazz tocando" />
-        <div>
-          <h1 class="mt-2 text-h1 h1-white">
-            Crie algo
-            <span class="text-primary decoration">Impactante</span> com música
+          <div class="img-principal">
+            <img src="img/ds-fundo.png" alt="Banda de Jazz tocando" />
+          </div>
+        
+        <div class="introduction-content">
+          <h1 class="mt-2 text-h1">
+            DDSDay:
+          Descomplicado
+          Desenvolvimento 
+          de 
+          Sistemas
           </h1>
           <p class="mt-2 mb-2 text-h1 h1-white">
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -62,100 +133,88 @@
     </section>
     <!--FIM-->
 
-<<<<<<< HEAD
-          <!--SECTION DE TODOS OS PALESTRANSTES DO EVENTO-->
-          <section class="section-palestrantes palestrantes">
-              <img class="fundo-palestrantes" src="./img/Rectangle.png">
-            <div class="cards">
-                  <div class="card-topo ">
-                    <img class="mr-1" src="img/Group 7.svg" alt="icon-livro">
-                    <h1 class="text-center"><span>PALESTRANTES</span></h1>
-                  </div>
-                  
-                  <div class="card-primary">
-                    
-                      <div class="img-palestrante">
-                        <img src="img/Fernando.png" alt="">
-                      </div>
-                      
-                      <div class="card-content">
-                        <h3>MATEUS SOUSA MARTINS</h3>
-                        <h4>PALESTRANTE</h4>
-                        <h4><span>TITULO DA PALESTRA: </span> Tornando-se um Ninja em Python: Dominando a Linguagem da Serpente</h4>
-                        <p> <br />Olá a todos, eu sou o Mateus, sou apaxionado
-                        <br />por tecnologia e pelo mundo do Linux
-                        <br />que é o que me impulsiona, trabalho
-                        <br />como desenvolvedor de software com foco em
-                        <br />desenvolvimento backend e automação web.
-                        <br />Além de ser um técnico em redes de
-                        <br />computadores, estou atualmente técnico
-                        <br />em Desenvolvimento de Sistemas na Unicorp.</p>
-                      </div>
-                      
-                  </div>
-=======
     <!--SECTION DE TODOS OS PALESTRANSTES DO EVENTO-->
     <section class="section-palestrantes">
       <div class="cards pb-3">
-        <div class="card-topo">
-          <img class="mr-1" src="img/Group 7.svg" alt="icon-livro">
-          <h1 class="text-center"><span>PALESTRANTES</span></h1>
+        <div class="card-topo mb-2">
+          <!-- <img class="mr-1" src="img/Group 7.svg" alt="icon-livro"> -->
+          <h1 class="text-center"><span>Palestrantes</span></h1>
         </div>
->>>>>>> 3cc6309fa136e44831e6136e9e6d812e024ee3bd
+
+        <div class="card-primary ">
+          <div class="img-palestrante">
+            <img src="img/Mateus.png" >
+          </div>
+
+          <div class="card-content ">
+            <p class="mb-1 p-title">MATEUS SOUSA MARTINS</p>
+            <div class="content-description">
+              <p class="text-upercase mb-1">Tornando-se um Ninja em Python</p>
+              <p>"Olá a todos, eu sou o Mateus, sou apaxionado
+                por tecnologia e pelo mundo do Linux que
+                é o que me impulsiona, trabalho como
+                desenvolvedor de software com foco em
+                desenvolvimento backend e automação web. 
+                Além de ser um técnico em redes de
+                computadores, estou atualmente técnico
+                em Desenvolvimento de Sistemas na Unicorp".</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card-left ">
+            <div class="img-palestrante" >
+              <img src="img/Fernando.png" alt="">
+            </div>
+
+            <div class="card-content">
+              <p class="p-title mb-1">FERNANDO SANTANA SANTOS</p>
+              <div class="content-description">
+                <p class="text-upercase mb-2">Tornando-se um Ninja em Python</p>
+                <p>"Fala pessoal, me chamo Fernando, sou formado em sistemas de informação e estou cursando pós graduação em engenharia de software, trabalho com tecnologia há cerca de 4 anos como 
+                  desenvolvedor de software, projetando e estando presente em todas a fases do desenvolvimento de diversos produtos, trabalhei desde fábrica 
+                  de softwares até multinacionais sempre proporcionando o melhor que a tecnologia tem a oferecer, nos vemos em breve!".</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="card-right ">
+          <div class="img-palestrante">
+            <img src="img/Rogerio.png" alt="">
+          </div>
+
+          <div class="card-content ">
+            <p class="p-title mb-1">ROGERIO ALENCAR FILHO</p>
+            <div class="content-description">
+              <p text-upercase mb-1>INTERNET DAS COISAS E DOMANDO O DRAGÃO</p>
+              <p>"Olá a todos, eu sou o Mateus, sou apaxionado
+                  por tecnologia e pelo mundo do Linux que
+                  é o que me impulsiona, trabalho como
+                  desenvolvedor de software com foco em
+                  desenvolvimento backend e automação web.
+                  Além de ser um técnico em redes de
+                  computadores, estou atualmente técnico
+                  em Desenvolvimento de Sistemas na Unicorp".</p>
+            </div>
+          </div>
+        </div>
 
         <div class="card-primary">
-
           <div class="img-palestrante">
-            <img src="img/Mateus.png" alt="">
+            <img src="img/Israel.png" alt="">
           </div>
-
+          
           <div class="card-content">
-            <h3>MATEUS SOUSA MARTINS</h3>
-            <h4>PALESTRANTE</h4>
-            <h4><span><br />TITULO DA PALESTRA: </span> <br />Tornando-se um Ninja em Python: <br />Dominando a
-              Linguagem da Serpente<br /></h4>
-            <p> <br />"Olá a todos, eu sou o Mateus, sou apaxionado
-              por tecnologia e pelo mundo do Linux que
-              é o que me impulsiona, trabalho como
-              desenvolvedor de software com foco em
-              desenvolvimento backend e automação web.
-              Além de ser um técnico em redes de
-              computadores, estou atualmente técnico
-              em Desenvolvimento de Sistemas na Unicorp".</p>
+            <p class="p-title mb-1">ISRAEL DANTAS LEITE</p>
+            <div class="content-description">
+              <p class="text-upercase mb-1">Tech Lead na DASA</p>
+              <p>"Liderando equipes técnicas. Este profissional é uma ponte entre a visão estratégica da empresa e a implementação técnica,
+                tomando decisões críticas para o sucesso dos projetos. Experiência com cloud computing, transformação digital, modernização de aplicações, ambientes criticos e eficiência de aplicações".</p>
+            </div>
           </div>
-
-        </div>
-
-        <div class="card-left cardsC">
-          <img src="img/Fernando.png" alt="">
-          <h3>FERNANDO SANTANA SANTOS</h3>
-          <h4>PALESTRANTE</h4>
-
-          <p> <br />"Fala pessoal, me chamo Fernando, sou
-            formado em sistemas de informação e
-            estou cursando pós graduação em
-            engenharia de software, trabalho com tecnologia
-            há cerca de 4 anos como desenvolvedor
-            de software, projetando e estando presente
-            em todas a fases do desenvolvimento de
-            diversos produtos, trabalhei desde fábrica
-            de softwares até multinacionais sempre
-            proporcionando o melhor que a tecnologia tem
-            a oferecer, nos vemos em breve!"</p>
-        </div>
-
-        <div class="card-right cardsC">
-          <img src="img/Rogerio.png" alt="">
-          <h3>ROGERIO ALENCAR FILHO</h3>
-          <h4>PALESTRANTE</h4>
-
-          <p> </p>
-        </div>
-
-        <div class="card-right">
-          <img src="img/Israel.png" alt="">
-          <h3>ISRAEL DANTAS LEITE</h3>
-          <h4>PALESTRANTE</h4>
+          
+          <!-- <h4>PALESTRANTE</h4>
           <h4><br />Tech Lead na DASA </h4>
 
           <p><br />Liderando equipes técnicas. Este profissional é uma
@@ -163,18 +222,44 @@
             técnica, tomando decisões críticas para o sucesso dos projetos.
 
             Experiência com cloud computing, transformação digital, modernização
-            de aplicações, ambientes criticos e eficiência de aplicações.</p>
+            de aplicações, ambientes criticos e eficiência de aplicações.</p> -->
         </div>
 
-        <div class="card-left cardsC">
-          <img src="img/Fernando.png" alt="">
-          <h3>FERNANDO SANTANA SANTOS</h3>
-          <h4>PALESTRANTE</h4>
-
-          <p> </p>
+        <div class="card-left ">
+          <div class="img-palestrante">
+            <img src="img/Maria Eduarda.png" alt="">
+          </div>
+          
+          <div class="card-content">
+            <p class="p-title mb-1">MARIA EDUARDA LIMA SARAIVA</p>
+            <div class="content-description">
+              <p>QA LEAD NO FITBANK</p>
+              <p>Acadêmica em Ciências em computação na Universidade Federal do Ceará</p>
+            </div>
+          </div>
+          
+          <!-- <h4>PALESTRANTE</h4>
+          <h5><br />QA Lead no FitBank</h5>
+          <h5>Ciência da Computação na UFC</h5> -->
+          
 
         </div>
 
+        <div class="card-right">
+          <div class="img-palestrante">
+            <img src="img/davyla-palestrante.jpg" alt="Davyla-Palestrante">
+          </div>
+          
+          <div class="card-content">
+            <p class="p-title mb-1">ISRAEL DANTAS LEITE</p>
+            <div class="content-description">
+              <p>DOMINANDO E ENTENDENDO O SCRUM
+              </p>
+              <p>" Especialista em Gestão de projetos e metodologia Ágil. Carreira desenvolvida na área de Tecnologia da Informação, com ampla experiência no gerenciamento de projetos, planejamento 
+                e desenvolvimento de sistemas, gestão de equipes e implementação de melhorias ."</p>
+            </div>
+          </div>
+        </div>
         <!-- <div class="card-content">
                   <h3>MATEUS SOUSA MARTINS</h3>
                   <h4>PALESTRANTE</h4>
@@ -189,6 +274,31 @@
                   em Desenvolvimento de Sistemas na Unicorp.</p>
                 </div> -->
 
+                <div class="card-primary">
+                  <div class="img-palestrante">
+                    <img src="img/kauê.jpg" alt="">
+                  </div>
+                  
+                  <div class="card-content">
+                    <p class="p-title mb-1">Francisco Kauê Oliveira Sampaio
+                    </p>
+                    <div class="content-description">
+                      <p class="text-upercase mb-1">Tech Lead na DASA</p>
+                      <p>"Liderando equipes técnicas. Este profissional é uma ponte entre a visão estratégica da empresa e a implementação técnica,
+                        tomando decisões críticas para o sucesso dos projetos. Experiência com cloud computing, transformação digital, modernização de aplicações, ambientes criticos e eficiência de aplicações".</p>
+                    </div>
+                  </div>
+                  
+                  <!-- <h4>PALESTRANTE</h4>
+                  <h4><br />Tech Lead na DASA </h4>
+        
+                  <p><br />Liderando equipes técnicas. Este profissional é uma
+                    ponte entre a visão estratégica da empresa e a implementação
+                    técnica, tomando decisões críticas para o sucesso dos projetos.
+        
+                    Experiência com cloud computing, transformação digital, modernização
+                    de aplicações, ambientes criticos e eficiência de aplicações.</p> -->
+                </div>
       </div>
     </section>
     <!--FIM-->
@@ -233,199 +343,457 @@
         <div class="wrapperCarrossel">
           <i id="left" class="fa-solid fa-angle-left"></i>
           <ul class="carouselCarrossel">
+
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno1.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Kaiqui Magalhe</a>
+                  <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
               </div>
+                
             </li>
+
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno2.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">José Wedeson</a>
+                  <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno3.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Francisco Kauê</a>
+                  <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno4.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Émerson De Sousa</a>
+                  <a href="#turma" class="tag">Level 16</a>
+                </div>
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno5.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Luis Samuel</a>
+                  <a href="#turma" class="tag">Level 16</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno6.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Savio Farias</a>
+                  <a href="#turma" class="tag">Level 16</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno7.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Heloise Maria</a>
+                <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno8.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Rafael Alves</a>
+                <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno9.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">João Pedro</a>
+                <a href="#turma" class="tag">Level 16</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno10.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Francisco Assis</a>
+                <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno11.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Antonio Cicero</a>
+                <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno12.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">João Paulo</a>
+                <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno13.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Wallace Berguinins</a>
+                <a href="#turma" class="tag">Level 16</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno14.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Elias Kaiky</a>
+                <a href="#turma" class="tag">Level 16</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno15.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Vanderson Mendes</a>
+                <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno16.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Yago José</a>
+                <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno17.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Marcos Paulo</a>
+                <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno18.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Kauan Emanuel</a>
+                <a href="#turma" class="tag">Level 16</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno19.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">João Victor</a>
+                <a href="#turma" class="tag">Level 16</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno20.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Rafhaell Alves</a>
+                <a href="#turma" class="tag">Level 16</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno21.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Ayala Denys</a>
+                <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno22.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Kauã Francisco</a>
+                <a href="#turma" class="tag">Level 16</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno23.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Levi Camilo</a>
+                <a href="#turma" class="tag">Level 16</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno24.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Gabriel Sousa</a>
+                <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno25.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Ludmila Lima</a>
+                <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno26.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Ananda Isabelly</a>
+                <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno27.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Reginara Pereira</a>
+                  <a href="#turma" class="tag">Level 15</a>
+                </div>
+
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno28.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Geovana Bezerra</a>
+                <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno29.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Isadora De Moraes</a>
+                <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno30.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Francisco Carlos</a>
+                  <a href="#turma" class="tag">Level 15</a>
+                </div>
+               
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno31.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Maria Eduarda</a>
+                  <a href="#turma" class="tag">Level 15</a>
+                </div>
+               
               </div>
             </li>
-            <li class="cardCarrossel">
-              <div class="imgCarrossel">
-                <img src="img/aluno32.jpeg" alt="img" draggable="false" />
-              </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno33.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Eduardo Alves</a>
+                <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno34.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Francisco Miro</a>
+                <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno35.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Francisco Erik</a>
+                <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno36.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Tallyson Gabriel</a>
+                <a href="#turma" class="tag">Level 16</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno37.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Francisca Lorrany</a>
+                <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno38.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Yudi Gomes</a>
+                <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
               </div>
             </li>
             <li class="cardCarrossel">
               <div class="imgCarrossel">
                 <img src="img/aluno39.jpeg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Igor Pereira</a>
+                <a href="#turma" class="tag">Level 16</a>
+                </div>
+                
+              </div>
+            </li>
+            <li class="cardCarrossel">
+              <div class="imgCarrossel">
+                <img src="img/aluno-40.jpg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Ana Luiza</a>
+                <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
+              </div>
+            </li>
+            <li class="cardCarrossel">
+              <div class="imgCarrossel">
+                <img src="img/aluno-41.jpg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Maria Ariane</a>
+                <a href="#turma" class="tag">Level 16</a>
+                </div>
+                
+              </div>
+            </li>
+            <li class="cardCarrossel">
+              <div class="imgCarrossel">
+                <img src="img/aluno-42.jpg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Maria Mayara</a>
+                <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
+              </div>
+            </li>
+            <li class="cardCarrossel">
+              <div class="imgCarrossel">
+                <img src="img/aluno-43.jpg" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Maria Ariane</a>
+                <a href="#turma" class="tag">Level 16</a>
+                </div>
+                
+              </div>
+            </li>
+            <li class="cardCarrossel">
+              <div class="imgCarrossel">
+                <img src="img/sem-foto.png" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Sofia Pinto</a>
+                <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
+              </div>
+            </li>
+            <li class="cardCarrossel">
+              <div class="imgCarrossel">
+                <img src="img/sem-foto.png" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Cauã Maia</a>
+                <a href="#turma" class="tag">Level 15</a>
+                </div>
+                
+              </div>
+            </li>
+            <li class="cardCarrossel">
+              <div class="imgCarrossel">
+                <img src="img/sem-foto.png" alt="img" draggable="false" />
+                <div class="tags">
+                  <a href="#turma" class="tag">Ana Dalyla</a>
+                <a href="#turma" class="tag">Level 16</a>
+                </div>
+                
               </div>
             </li>
           </ul>
@@ -507,7 +875,7 @@
   <footer>
     <div class="container">
       <div class="about-column">
-        <img src="img/logo1.svg" alt="Jaz scool" class="mt-1 mb-1" />
+        <img src="img/logo-ds.jpg" alt="Jaz scool" class="mt-1 mb-1" />
       </div>
 
       <nav class="mb-1">
