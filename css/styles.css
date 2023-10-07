@@ -415,7 +415,12 @@ margin-right: 3rem;
   text-decoration: none;
   text-transform: uppercase;
 }
-
+/*SECTION SEMINÁRIO - HYVINA*/
+.section-seminar {
+  width: 90%;
+  background-color: var(--pink-heavy);
+}
+/*FIM*/
 .section-palestrantes{
   width: 100%;
   display: flex;
@@ -602,7 +607,12 @@ text-align: center!important;
   font-size: 16px;
   color: #FFF;
 }
-
+/*SECTION ESPECIAL CARD - VICTORIA*/
+.section-special {
+  width: 90%;
+  background-color: var(--blue-heavy);
+}
+/*FIM*/
 .programation-section {
   display: flex;
   justify-content: center;
