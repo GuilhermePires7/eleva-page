@@ -519,7 +519,7 @@ margin-right: 3rem;
 .card:hover {
   background-color: var(--light-blue-primary);
 }
-.card-primary, .card-left, .card-right {
+.card-primary, .card-left, .card-right  {
 font-family: 'Montserrat', sans-serif;
   text-align: center;
   font-weight: bold;
@@ -661,10 +661,257 @@ text-align: center!important;
   color: #FFF;
 }
 /*SECTION ESPECIAL CARD - VICTORIA*/
-.section-special {
-  width: 90%;
-  background-color: var(--blue-heavy);
+.section-special{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
 }
+.section-special .card-principal h1 span {
+  font-size: 4rem;
+  line-height: 105%;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--purple-weavy);
+  font-weight: 900;
+  letter-spacing: -2px;
+  text-transform: capitalize; 
+}
+
+.card-principal {
+  width: 85%;
+  flex-shrink: 0; 
+  border-radius: 59px;
+  background: var(--white); 
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: -8rem ;
+  margin-bottom: 8rem;
+  align-items: center;
+  box-shadow: 9px 7px 8px 8px rgba(255, 174, 0, 0.25);
+ 
+}
+.card-principal img{
+  padding-left: 10px;
+}
+
+.card-top {
+  width: 69%;
+  margin-top:7rem ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.card-special{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background:  var(--orange-primary);
+  border-top: 16px solid var(--yellow-primary);
+  border-right: 16px solid var(--yellow-primary);
+  
+}  
+.card-special .img-palestrante img {
+  width: 100%;
+}
+
+.card-special .content-description {
+  width: 100%;
+}
+
+.card-special h4 span{
+  font-size: 17px;
+  color: #EC4935;
+  text-align: center;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+  justify-content: right;
+}
+.card-special p{
+  font-size: 1rem;
+  color: #FFF;
+  justify-content: right;
+}
+.card-special img{
+  width: 100%;
+ 
+  margin-top: 10px;
+  justify-content: right;
+}
+
+p.p-title {
+  font-size: 1.4rem!important;
+  text-align: center!important;
+  }
+
+  .format-text-p {
+    word-wrap: break-word;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 2px 3px 3px var(--black); 
+  }
+
+  .card-content1 {
+    padding-top: 1.5rem;
+    width: 100%;
+    }
+    .card-content1 h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+    
+    }
+
+    .content-description1 p {
+      padding: 0.5rem;
+    }
+/* .section-special{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.section-special .palestrante-special h1 span {
+  font-size: 4rem;
+  line-height: 105%;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--purple-weavy);
+  font-weight: 900;
+  letter-spacing: -2px;
+  text-transform: capitalize; 
+}
+
+.palestrante-special {
+  width: 85%;
+  flex-shrink: 0; 
+  border-radius: 59px;
+  background: var(--white); 
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: -8rem ;
+  margin-bottom: 8rem;
+  align-items: center;
+  box-shadow: 9px 7px 8px 8px rgba(0, 76, 255, 0.25);
+ 
+}
+.palestrante-special img{
+  padding-left: 10px;
+}
+
+.palestrante-special {
+  width: 300px;
+  height: 380px;
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 15px;
+  font-size:20px;
+  box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.2)!important;
+  border: none!important;
+} */
+/* .section-special {
+  width: 85%;
+  flex-shrink: 0; 
+  border-radius: 59px;
+  background: var(--white); 
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: -8rem ;
+  margin-bottom: 8rem;
+  align-items: center;
+  box-shadow: 9px 7px 8px 8px rgba(0, 76, 255, 0.25);
+ 
+}
+
+.palestrante-special{
+  justify-content: center;
+}
+
+
+.section-special {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-special .palestrante-special {
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  padding-left: 1.5rem;
+}
+
+.palestrante-special h1 span{
+  color: var(--orange-primary);
+  text-shadow: 3px 3px 3px#212121;
+  font-family: "Skranji";
+}
+
+.card-special {
+  font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-overflow:ellipsis;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    margin-top: 20px;
+    align-items: center;
+    
+  }
+  .card-special h4 span{
+    font-size: 17px;
+    color: #EC4935;
+    text-align: center;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+    justify-content: right;
+  }
+  .card-special p{
+    font-size: 1rem;
+    color: #FFF;
+    justify-content: right;
+  }
+  .card-special img{
+    width: 180px;
+    height: 180px;
+    margin-top: 10px;
+    justify-content: right;
+  }
+
+  .card-special .content-description {
+    width: 100%;
+  }
+  .card-special{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background:  var(--orange-primary);
+    box-shadow: 9px 7px 10px 0px rgba(240, 109, 207, 0.25);
+    border-top: 16px solid var(--yellow-primary);
+    border-right: 16px solid var(--yellow-primary);
+    
+  }  
+  .card-special .img-palestrante img {
+    width: 100%;
+  } */
+
+  
+
+  
 /*FIM*/
 .programation-section {
   display: flex;
