@@ -618,28 +618,67 @@ text-align: center!important;
   justify-content: center;
   align-items: center;
 }
-.programation-section .programacao {
-  display: flex;
-  justify-content: left;
-  align-items: start;
-  padding-left: 1.5rem;
-}
 
-.programacao {
+.programation-section .programacao {
   width: 88%;
+  height: auto;
   flex-shrink: 0; 
-  border-radius: 59px;
+  border-radius: 20px;
   background: var(--white); 
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
   margin-top: -8rem ;
   margin-bottom: 8rem;
+  padding: 1rem;
   align-items: center;
   box-shadow: 9px 7px 8px 0px rgba(0, 76, 255, 0.25);
 }
+.programation-section .programacao .card-topo {
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.programation-section .programacao .card-topo h1{
+font-size: 4rem;
+line-height: 105%;
+font-family: 'Montserrat', sans-serif;
+color: var(--purple-weavy);
+font-weight: 900;
+letter-spacing: -2px;
+text-transform: capitalize; 
+}
+/* Estilos gerais da tabela */
+.programacao-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 20px;
+}
 
-.programation-section .programacao .decoration {
+.programacao-table th, .programacao-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Estilos para cabeçalho */
+.programacao-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Estilos para linhas ímpares */
+.programacao-table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+/* Estilos para linhas pares (opcional) */
+.programacao-table tbody tr:nth-child(even) {
+  background-color: #e0e0e0;
+}
+
+/* .programation-section .programacao .decoration {
   display: block;
   position: relative; 
 }
@@ -659,7 +698,7 @@ text-align: center!important;
   height: 90px;
   align-items:center;
   display:flex;
-}
+} */
 .tags {
   display: flex;
   flex-direction: row;
