@@ -360,7 +360,7 @@ nav a:hover{
 /*****FORMATAÇÃO MAIN*******/
 .section-introducao {  
   padding-right: 0;
-  padding-bottom: 16rem;
+  margin-bottom: 10rem;
 }
 .section-introducao img{
   display: block;
@@ -389,14 +389,14 @@ border-radius: 20px;
 margin-right: 3rem;
 
 }
-.section-introducao .container .introduction-content h1{
+.title-h1{
   color: var(--purple-weavy);
   font-family: 'Montserrat';
   font-weight: 900;
   letter-spacing:-2px;
 
 }
-.section-introducao p {
+.title-p{
   color: var(--purple-weavy);
   font-style: italic;
   font-weight: 400;
@@ -417,42 +417,42 @@ margin-right: 3rem;
 }
 /*SECTION SEMINÁRIO - HYVINA*/
 .section-seminar {
-  width: 95%;
-  height: 95%;
-  margin-left: 2.5rem;
-  margin-bottom: 10rem;
-  background-color: var(--white);
-  border-radius: 1.5rem;
-  box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.2)!important;
-  text-align: center;
-  text-shadow: var(--white);
+  width: 100%;
+  margin-bottom: 4rem;
+  
 }
-.text-seminarP{
-  font-family:'Montserrat';
-  font-style: italic;
-  font-weight:bold;
-  font-size: 50px;
-  color: var(--purple-weavy);
+.section-seminar .content-seminar {
+  width: 100%;
   height: auto;
-  padding-top: 20px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.text-seminarS{
+.description-seminar {
+  width: 50%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  
+}
+
+.div-img{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+/* .text-seminarS{
   color: var(--purple-secondary);
   font-size: 25px;
   margin-top: 1.2rem;
   font-family:'Varela Round', sans-serif;
   font-weight: bold;
   height: auto;
-}
-.imagens-seminar{
-  display: flex;
-  flex-direction: row;
- justify-content: center;
- border: 1px solid gray;
- width: 100%;
-}
-.imagens-seminar img{
-  width: 30%;
+} */
+.div-img img{
+  width: 20%;
   margin: 0 4rem;
 }
 /* .netcomresponsa{
@@ -497,7 +497,6 @@ margin-right: 3rem;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  margin-top: -8rem ;
   margin-bottom: 8rem;
   align-items: center;
   box-shadow: 9px 7px 8px 8px rgba(0, 76, 255, 0.25);
