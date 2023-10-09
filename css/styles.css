@@ -4,6 +4,33 @@
   margin: 0;
   padding: 0;
 }
+@font-face {
+  font-family: 'Rhuma Sinera Inline.';
+  src: url('../fonts/RhumaSineraInline.woff2') format('woff2'),
+      url('../fonts/RhumaSineraInline.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rhuma Sinera Regular.';
+  src: url('../fonts/RhumaSineraRegular.woff') format('woff2'),
+      url('../fonts/RhumaSineraRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rhuma Sinera Shadow.';
+  src: url('../fonts/RhumaSineraShadow.woff') format('woff2'),
+      url('../fonts/RhumaSineraShadow.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --brown-primary: #A27C16;
   --brown-secondary: #4A330F;
@@ -361,6 +388,7 @@ nav a:hover{
 .section-introducao {  
   padding-right: 0;
   margin-bottom: 10rem;
+
 }
 .section-introducao img{
   display: block;
@@ -396,9 +424,16 @@ margin-right: 3rem;
   letter-spacing:-2px;
 
 }
+.section-introducao .title-h1 span {
+  font-weight: 900;
+  font-style: italic;
+  color: var(--black);
+  letter-spacing: 1.5px;
+  text-shadow: 5px 2px 2px var(--purple-weavy);
+  
+}
 .title-p{
   color: var(--purple-weavy);
-  font-style: italic;
   font-weight: 400;
 }
 .button {
@@ -913,6 +948,7 @@ p.p-title {
   
 /*FIM*/
 .programation-section {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -948,7 +984,7 @@ text-transform: capitalize;
 }
 /* Estilos gerais da tabela */
 .programacao-table {
-  width: 100%;
+  width: 90%;
   border-collapse: collapse;
   margin-top: 20px;
   border-radius: 20px;
@@ -1164,8 +1200,6 @@ p{
   header nav {
      display: flex;
      text-align: center;
-     
-     
   }
   
   .cards {
@@ -1205,11 +1239,36 @@ p{
     border-radius: 20px;
     margin-right: 1rem;
     margin-top: 2.5rem;
-    
+  }
+  .section-seminar {
+    margin-bottom: 10rem;
+  }
+  .section-seminar .description-seminar {
+    width: 100%;
+  }
+  .section-seminar .div-img {
+    width: 100%;
+  }
+  .section-seminar .div-img img {
+    width: 40%;
+    margin: 0 1rem;
   }
   .introduction-content {
     margin-top: 1.5rem;
   }
+  .programation-section {
+    width: 100%;
+  }
+  .programation-section .programacao {
+    width: 100%;
+  }
+  .programacao .programacao-table {
+    width: 100%; /* Defina a largura da tabela como 100% */
+  }
+  .title-h1 {
+    font-size: 2.2rem!important;
+  }
+
   .button {
     margin-top: 4.5rem;
   }
