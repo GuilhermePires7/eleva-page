@@ -427,9 +427,9 @@ margin-right: 3rem;
 .section-introducao .title-h1 span {
   font-weight: 900;
   font-style: italic;
-  color: var(--black);
+  color: var(--purple-weavy);
   letter-spacing: 1.5px;
-  text-shadow: 5px 2px 2px var(--purple-weavy);
+  text-shadow: 4px 3px 2px var(--black);
   
 }
 .title-p{
