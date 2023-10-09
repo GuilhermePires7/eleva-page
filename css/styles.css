@@ -118,13 +118,13 @@ header #navbar .navbar-list .navbar-item .navbar-link:not(#link-plans):hover {
 header #navbar .navbar-list .navbar-item #link-plans {
   padding: 0.8rem 1.2rem;
   border-radius: 5px;
-  border: 1px solid var(--pink-heavy);
-  color: var(--pink-heavy);
-  background: linear-gradient(var(--pink-heavy) 0 0) left/var(--p, 0%) no-repeat;
+  border: 1px solid var(--purple-weavy);
+  color: var(--purple-weavy);
+  background: linear-gradient(var(--purple-weavy) 0 0) left/var(--p, 0%) no-repeat;
   transition: background 0.7s, color 0.1s, background-position 0s;
 }
 header #navbar .navbar-list .navbar-item #link-plans:hover {
-  color: #181820;
+  color: var(--white);
   background-position: right;
   --p: 100%;
 }
@@ -231,9 +231,9 @@ header #navbar .nav-mobile--list--item #link-plans {
   text-align: center;
   padding: 0.8rem 1.2rem;
   border-radius: 5px;
-  border: 1px solid var(--pink-heavy);
-  color: var(--pink-heavy);
-  background: linear-gradient(var(--pink-heavy) 0 0) left/var(--p, 0%) no-repeat;
+  border: 1px solid var(--purple-weavy);
+  color: var(--purple-weavy);
+  background: linear-gradient(var(--purple-weavy) 0 0) left/var(--p, 0%) no-repeat;
   transition: background 0.7s, color 0.1s, background-position 0s;
 }
 header #navbar .nav-mobile--list--item #link-plans:hover {
