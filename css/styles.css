@@ -45,6 +45,7 @@
   --pink-primary: #a91950;
   --pink-heavy:#ED1167;
   --pink-secondary: #cf5e79;
+  --pink-outubro:#ffcbdb;
   --light-blue-primary: #2acfff;
   --light-blue-secondary: #0AA1DE;
   --blue-primary: #2097D4;
@@ -189,7 +190,7 @@ header #navbar .nav-mobile {
   left: 0;
   top: 0;
   height: 100vh;
-  width: 50%;
+  width: 80%;
   min-width: 200px;
   background-color: var(--black);
   transform: translateX(-100%);
@@ -415,14 +416,22 @@ border-radius: 20px;
 }
 .introduction-content {
 margin-right: 3rem;
-
+}
+.introduction-content span{
+  margin-right: -10px;
 }
 .title-h1{
   color: var(--purple-weavy);
   font-family: 'Montserrat';
   font-weight: 900;
   letter-spacing:-2px;
-
+}
+.title-h1-introduction{
+  color: var(--pink-outubro);
+  font-family: 'Montserrat';
+  font-weight: 900;
+  letter-spacing:-2px;
+  text-shadow: 2px 3px 3px var(--black); 
 }
 .section-introducao .title-h1 span {
   font-weight: 900;
@@ -436,6 +445,29 @@ margin-right: 3rem;
   color: var(--purple-weavy);
   font-weight: 400;
 }
+.title-p-introduction{
+  text-align: left;
+  color: var(--pink-outubro);
+  text-shadow: 1px 1px 1px var(--black);
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 0!important;
+  
+}
+.content-img-date {
+  display: flex;
+  flex-direction: column;
+
+}
+.content-date {
+  display: flex;
+  flex-direction: row;
+
+}
+.content-date img {
+  width: 23%;
+  margin: 2rem 3rem 0 0;
+}
 .button {
   background-color: var(--purple-weavy);
   border: 2px solid var(--black);
@@ -445,7 +477,7 @@ margin-right: 3rem;
   font-size: 1.25rem;
   padding: .75rem 1rem;
   max-width: 14rem;
-  margin-top:5rem ;
+  margin-top:2rem ;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -1133,7 +1165,7 @@ p{
   font-family: "Exo 2", Opens Sans;
   font-size: 19px;
   color: #FFF;
-  
+  padding: 0;
   
 }
 h2 {
@@ -1231,6 +1263,9 @@ p{
     flex-direction: column;
     justify-content: center;
     
+  }
+  .introduction-content span{
+    margin-right: 0;
   }
   .img-principal {
     width: auto;
