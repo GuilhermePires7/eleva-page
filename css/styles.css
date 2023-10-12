@@ -56,10 +56,20 @@
   --purple-primary: #9B3D97;
   --purple-secondary: #672D8F;
   --purple-weavy:#6f0678;
-  --black:#000;
+  --black:#141414;
   --gray-primary: #959494;
   --gray-secondary: #242021;
-  --white:#ffffff;
+  --white:#f5f5f5;
+  --white-a:#f0f0f0;
+  --white-b:#E0E0E0;
+  --white-c:#CCCCCC;
+  --gray:#7a7a7a;
+  --gray-a:#666666;
+  --gray-b:#525252;
+  --gray-c:#3D3D3D;
+  --gray-heavy:#292929;
+  
+
   
 }
 body {
@@ -73,7 +83,7 @@ footer {
 }
 /****HEADER FORMATAÇÃO******/
 header {
-  background-color: var(--black);
+  background-color: #000;
   width: 100%;
   height: 80px;
   padding: 0 5rem;
@@ -119,9 +129,9 @@ header #navbar .navbar-list .navbar-item .navbar-link:not(#link-plans):hover {
 header #navbar .navbar-list .navbar-item #link-plans {
   padding: 0.8rem 1.2rem;
   border-radius: 5px;
-  border: 1px solid var(--purple-weavy);
-  color: var(--purple-weavy);
-  background: linear-gradient(var(--purple-weavy) 0 0) left/var(--p, 0%) no-repeat;
+  border: 1px solid var(--purple-secondary);
+  color: var(--purple-secondary);
+  background: linear-gradient(var(--purple-secondary) 0 0) left/var(--p, 0%) no-repeat;
   transition: background 0.7s, color 0.1s, background-position 0s;
 }
 header #navbar .navbar-list .navbar-item #link-plans:hover {
@@ -389,17 +399,19 @@ nav a:hover{
 .section-introducao {  
   padding-right: 0;
   margin-bottom: 10rem;
+  background-color: #000;
 
 }
 .section-introducao img{
   display: block;
   margin: 1.25rem 0 0 auto;
   max-width: 100%;
+  border-radius: 20px;
 }
 .img-principal {
 width: auto;
 height: auto;
-background-color: var(--purple-weavy);
+background-color: var(--white-c);
 border-radius: 20px;
 }
 .section-introducao .button {
@@ -419,35 +431,37 @@ margin-right: 3rem;
 }
 .introduction-content span{
   margin-right: -10px;
+ 
+}
+.section-introducao .title-h1 span {
+  color: var(--purple-secondary);
+  letter-spacing: 2.5px;
+  font-weight: 600!important;
 }
 .title-h1{
-  color: var(--purple-weavy);
+  color: var(--white-a);
   font-family: 'Montserrat';
   font-weight: 900;
   letter-spacing:-2px;
 }
 .title-h1-introduction{
-  color: var(--pink-outubro);
+  color: var(--purple-secondary);
   font-family: 'Montserrat';
-  font-weight: 900;
+  line-height: 1;
+  font-weight: 600;
+  margin-left: 2rem;
+  margin-top: 2.8rem!important;
   letter-spacing:-2px;
   text-shadow: 2px 3px 3px var(--black); 
 }
-.section-introducao .title-h1 span {
-  font-weight: 900;
-  font-style: italic;
-  color: var(--purple-weavy);
-  letter-spacing: 1.5px;
-  text-shadow: 4px 3px 5px var(--black);
-  
-}
+
 .title-p{
   color: var(--purple-weavy);
   font-weight: 400;
 }
 .title-p-introduction{
   text-align: left;
-  color: var(--pink-outubro);
+  color: var(--white-a);
   text-shadow: 1px 1px 1px var(--black);
   font-size: 1.3rem;
   font-weight: 400;
@@ -457,23 +471,32 @@ margin-right: 3rem;
 .content-img-date {
   display: flex;
   flex-direction: column;
-
+  
 }
 .content-date {
   display: flex;
   flex-direction: row;
-
 }
-.content-date img {
-  width: 23%;
-  margin: 2rem 3rem 0 0;
+.content-date a {
+  width: 30%;
+  margin-top: 1rem;
+}
+.introduction-local {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.introduction-local img {
+  width: 5%;
+  margin: 0;
 }
 .button {
-  background-color: var(--purple-weavy);
+  background-color: var(--purple-secondary);
   border: 2px solid var(--black);
   box-shadow: 4px 4px 0 var(--black);
   color: var(--white);
   display: block;
+  border-radius: 20px;
   font-size: 1.25rem;
   padding: .75rem 1rem;
   max-width: 14rem;
@@ -488,6 +511,9 @@ margin-right: 3rem;
   margin-bottom: 4rem;
   
 }
+.section-seminar .title-h1 {
+  color: var(--gray-a);
+}
 .section-seminar .content-seminar {
   width: 100%;
   height: auto;
@@ -498,6 +524,9 @@ margin-right: 3rem;
 }
 .description-seminar {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0 auto;
   padding: 2rem 0;
   
@@ -1266,6 +1295,21 @@ p{
   }
   .introduction-content span{
     margin-right: 0;
+  }
+  .title-h1-introduction {
+    font-size: 3rem;
+  }
+  .title-p-introduction {
+    margin-top: 4rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+  }
+  .introduction-local img {
+    width: 5%;
+    margin-top: 2rem;
+  }
+  .section-introducao img{
+    margin-top: 2.2rem;
   }
   .img-principal {
     width: auto;
