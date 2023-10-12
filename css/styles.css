@@ -585,6 +585,9 @@ margin-right: 3rem;
   letter-spacing: -2px;
   text-transform: capitalize; 
 }
+.section-palestrantes .title-h1 {
+  color: var(--gray-a);
+}
 .cards {
   width: 85%;
   flex-shrink: 0; 
@@ -1034,6 +1037,9 @@ p.p-title {
   display: flex;
   justify-content: center;
 }
+.programation-section .programacao .card-topo .title-h1 {
+  color: var(--gray-a);
+}
 .programation-section .programacao .card-topo h1{
 font-size: 4rem;
 line-height: 105%;
@@ -1294,18 +1300,19 @@ p{
     
   }
   .introduction-content span{
+    font-size: 2.5rem;
     margin-right: 0;
   }
   .title-h1-introduction {
-    font-size: 3rem;
+    font-size: 1rem;
   }
   .title-p-introduction {
-    margin-top: 4rem;
+    margin-top: 3rem;
     margin-left: 1rem;
     font-size: 1.5rem;
   }
   .introduction-local img {
-    width: 5%;
+    width: 10%;
     margin-top: 2rem;
   }
   .section-introducao img{
@@ -1314,7 +1321,6 @@ p{
   .img-principal {
     width: auto;
     height: auto;
-    background-color: var(--purple-weavy);
     border-radius: 20px;
     margin-right: 1rem;
     margin-top: 2.5rem;
@@ -1391,9 +1397,9 @@ p{
     width: 97%;
     margin-bottom:1.5rem ;
 }
-.section-palestrantes .cards h1 span {
-    font-size: 3rem;
-} 
+.title-h1-introduction {
+  font-size: 3rem;
+}
 }
 @media screen and (min-width: 72rem) {
   h1,h2 {
@@ -1435,15 +1441,8 @@ padding: 0 40px;
 align-items: center;
 justify-content: center;
 min-height: 100vh;
-background: var(--purple-primary);
+background: var(--purple-secondary);
 flex-direction: column;
-}
-
-.turmaTitulo{
-  font-family: 'Skranji', cursive;
-  color: var(--white);
-  font-weight: bold;
-  text-shadow: 3px 3px 3px#000;
 }
 
 .wrapperCarrossel {
@@ -1511,7 +1510,7 @@ scroll-snap-align: start;
 
 height: 27rem;
 list-style: none;
-background: var(--purple-primary);
+background: var(--purple-secondary);
 cursor: pointer;
 padding-bottom: 15px;
 padding-left: 1.4rem;
