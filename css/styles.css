@@ -512,7 +512,7 @@ margin-right: 3rem;
   
 }
 .section-seminar .title-h1 {
-  color: var(--gray-a);
+  color: var(--purple-weavy);
 }
 .section-seminar .content-seminar {
   width: 100%;
@@ -586,7 +586,7 @@ margin-right: 3rem;
   text-transform: capitalize; 
 }
 .section-palestrantes .title-h1 {
-  color: var(--gray-a);
+  color: var(--purple-weavy);
 }
 .cards {
   width: 85%;
@@ -1038,7 +1038,7 @@ p.p-title {
   justify-content: center;
 }
 .programation-section .programacao .card-topo .title-h1 {
-  color: var(--gray-a);
+  color: var(--purple-weavy);
 }
 .programation-section .programacao .card-topo h1{
 font-size: 4rem;
@@ -1277,6 +1277,9 @@ p{
   .card:nth-child(2n) {
       margin-top: 1rem;
   }
+  .section-seminar .title-p {
+    color: var(--gray-a);
+  }
 
 }
 @media screen and (max-width: 40rem) {
@@ -1338,6 +1341,9 @@ p{
     width: 40%;
     margin: 0 1rem;
   }
+  .section-seminar .title-p {
+    color: var(--gray-a);
+  }
   .introduction-content {
     margin-top: 1.5rem;
   }
@@ -1389,7 +1395,9 @@ p{
   .cards {
     flex-wrap: wrap;
   }
-  
+  .section-seminar .title-p {
+    color: var(--gray-a);
+  }
   
 }
 @media screen and (max-width: 55rem) {
@@ -1431,7 +1439,9 @@ p{
   .news-letter-form {
       flex: 1;
   }
-
+  .section-seminar .title-p {
+    color: var(--gray-a);
+  }
 }
 
 /* Carrossel CSS */
