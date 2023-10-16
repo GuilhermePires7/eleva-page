@@ -456,7 +456,7 @@ margin-right: 3rem;
 }
 
 .title-p{
-  color: var(--purple-weavy);
+  color: var(--gray-a);
   font-weight: 400;
 }
 .title-p-introduction{
@@ -465,7 +465,7 @@ margin-right: 3rem;
   text-shadow: 1px 1px 1px var(--black);
   font-size: 1.3rem;
   font-weight: 400;
-  padding: 0!important;
+  padding: 0;
   
 }
 .content-img-date {
@@ -505,14 +505,59 @@ margin-right: 3rem;
   text-decoration: none;
   text-transform: uppercase;
 }
-/*SECTION SEMINÁRIO - HYVINA*/
+.section-ddsday {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.description-ddsday {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2rem 0;
+  
+}
+.section-ddsday .title-h1 {
+  color: var(--gray-a);
+}
+.section-ddsday .title-p-introduction {
+  text-shadow: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 2rem auto;
+  color: var(--purple-weavy);
+  display: flex;
+  justify-content: center;
+  
+}
+.section-ddsday .div-img{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+.section-ddsday .div-img img {
+  width: 17%;
+}
+.dds-p {
+  width: 35%;
+}
+.section-ddsday .div-img .title-p-introduction {
+  color: var(--gray-a);
+}
+.section-ddsday .div-img .title-h1 {
+  text-align: left;
+  font-weight: 600;
+  padding:0 ;
+}
 .section-seminar {
   width: 100%;
   margin-bottom: 4rem;
   
 }
 .section-seminar .title-h1 {
-  color: var(--purple-weavy);
+  color: var(--gray-a);
 }
 .section-seminar .content-seminar {
   width: 100%;
@@ -586,7 +631,7 @@ margin-right: 3rem;
   text-transform: capitalize; 
 }
 .section-palestrantes .title-h1 {
-  color: var(--purple-weavy);
+  color: var(--gray-a);
 }
 .cards {
   width: 85%;
@@ -1038,7 +1083,7 @@ p.p-title {
   justify-content: center;
 }
 .programation-section .programacao .card-topo .title-h1 {
-  color: var(--purple-weavy);
+  color: var(--gray-a);
 }
 .programation-section .programacao .card-topo h1{
 font-size: 4rem;
@@ -1328,6 +1373,34 @@ p{
     margin-right: 1rem;
     margin-top: 2.5rem;
   }
+  .content-ddsday {
+    width: 100%;
+  }
+  .section-ddsday .div-img {
+    width: 100%;
+  }
+  .section-ddsday .div-img img {
+    width: 40%;
+    margin: 10px;
+  }
+  .dds-p {
+    width: 40%;
+    margin-left: 1rem;
+    margin-right: 1.5rem;
+  }
+  .dds-p .title-h1 {
+    margin-top: 1rem;
+  }
+  .dds-p .title-p-introduction {
+    margin-bottom: 1rem;
+  }
+  .description-ddsday {
+    width: 95%;
+  }
+  .section-ddsday .title-p-introduction {
+    padding: 1.1rem;
+    font-size: 1.2rem;
+  }
   .section-seminar {
     margin-bottom: 10rem;
   }
@@ -1458,7 +1531,6 @@ flex-direction: column;
 .wrapperCarrossel {
 max-width: 1100px;
 width: 100%;
-
 position: relative;
 }
 .wrapperCarrossel i {
