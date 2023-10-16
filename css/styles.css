@@ -69,15 +69,12 @@
   --gray-c:#3D3D3D;
   --gray-heavy:#292929;
   
-
-  
 }
 body {
   background: var(--white);
 }
 header,
 .section-introducao,
-.programation-section,
 footer {
   padding: 1.25rem;  
 }
@@ -552,12 +549,17 @@ margin-right: 3rem;
   padding:0 ;
 }
 .section-seminar {
+  background-color: #000;
   width: 100%;
+  padding-bottom: 1rem;
   margin-bottom: 4rem;
   
 }
 .section-seminar .title-h1 {
-  color: var(--gray-a);
+  color: var(--white-a);
+}
+.section-seminar .title-p {
+  color: var(--white-c);
 }
 .section-seminar .content-seminar {
   width: 100%;
@@ -1064,18 +1066,15 @@ p.p-title {
 }
 
 .programation-section .programacao {
-  width: 88%;
+  width: 100%;
   height: auto;
   flex-shrink: 0; 
-  border-radius: 20px;
-  background: var(--white); 
+  background: #000; 
   display: flex;
   flex-direction: column;
-  margin-top: -8rem ;
-  margin-bottom: 8rem;
   padding: 1rem;
   align-items: center;
-  box-shadow: 9px 7px 8px 0px rgba(0, 76, 255, 0.25);
+  padding-bottom: 4rem;
 }
 .programation-section .programacao .card-topo {
   padding-bottom: 2rem;
@@ -1083,7 +1082,7 @@ p.p-title {
   justify-content: center;
 }
 .programation-section .programacao .card-topo .title-h1 {
-  color: var(--gray-a);
+  color: var(--white);
 }
 .programation-section .programacao .card-topo h1{
 font-size: 4rem;
@@ -1146,6 +1145,20 @@ text-transform: capitalize;
   align-items:center;
   display:flex;
 } */
+.div-img .tag {
+  background: var(--white);
+  border-radius: 3px 0 0 3px;
+  text-align: center;
+  color: var(--gray-a);
+  display: inline-block;
+  height: auto;
+  padding: 20px 10px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+  text-overflow: ellipsis;
+}
 .tags {
   display: flex;
   flex-direction: row;
@@ -1160,8 +1173,8 @@ text-transform: capitalize;
   border-radius: 3px 0 0 3px;
   color: var(--purple-primary);
   display: inline-block;
-  height: 59px;
-  padding: 20px 20px 20px 20px;
+  height: auto;
+  padding: 20px 20px;
   position: relative;
   margin: 0 10px 10px 0;
   text-decoration: none;
@@ -1199,6 +1212,195 @@ text-transform: capitalize;
 
 .tag:hover::after {
    border-left-color: crimson; 
+}/* Carrossel CSS COORDENAÇÃO */
+.section-coordenacao {
+  width: 100%;
+  margin-top: 10rem;
+}
+.cards-coordenacao {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.25rem;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+.section-coordenacao .card-topo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.section-coordenacao .card-coord .div-img {
+  width: 90%;
+}
+.section-coordenacao .card-coord img {
+  width: 100%;
+  padding: 0px!important;
+  margin: 0 auto;
+  padding-right: 2rem;
+  border-radius: 20px;
+}
+.section-coordenacao .card-topo .title-h1 {
+  color: var(--gray-a);
+}
+
+.card-coord {
+  background-color: var(--gray-a);
+  border: var(--black);
+  box-shadow: 4px 4px 0 var(--black);
+  max-width: 17rem;
+  padding: 2rem 0 0 2rem;
+}
+.card-coord:nth-child(2n) {
+  align-self: end ;
+  background-color: var(--purple-weavy);
+}
+.card-coord strong {
+  display: block;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+.card-coord a {
+  display: block;
+  margin: 2rem 0 0 auto ;
+  width: fit-content;
+}
+/* Carrossel CSS */
+.bodyCarrossel {
+display: flex;
+padding: 0 40px; 
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+background: var(--purple-secondary);
+flex-direction: column;
+}
+.bodyCarrossel .div-img {
+  width: 70%;
+}
+.wrapperCarrossel {
+max-width: 1100px;
+width: 100%;
+position: relative;
+}
+
+.wrapperCarrossel i {
+top: 50%;
+height: 50px;
+width: 50px;
+cursor: pointer;
+font-size: 1.25rem;
+position: absolute;
+text-align: center;
+line-height: 50px;
+background: #FFF;
+border-radius: 50%;
+box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+transform: translateY(-50%);
+transition: transform 0.1s linear;
+}
+.wrapperCarrossel i:active{
+transform: translateY(-50%) scale(0.85);
+}
+.wrapperCarrossel i:first-child{
+left: -22px;
+}
+.wrapperCarrossel i:last-child{
+right: -22px;
+}
+.wrapperCarrossel .carouselCarrossel{
+display: grid;
+grid-auto-flow: column;
+grid-auto-columns: calc((100% / 3) - 12px);
+overflow-x: auto;
+scroll-snap-type: x mandatory;
+gap: 16px;
+border-radius: 8px;
+scroll-behavior: smooth;
+scrollbar-width: none;
+}
+.carouselCarrossel::-webkit-scrollbar {
+display: none;
+}
+.carouselCarrossel.no-transition {
+scroll-behavior: auto;
+}
+.carouselCarrossel.dragging {
+scroll-snap-type: none;
+scroll-behavior: auto;
+}
+.carouselCarrossel.dragging .cardCarrossel {
+cursor: grab;
+user-select: none;
+}
+.carouselCarrossel :where(.card, .img) {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+/* .cardAdmin {
+height: 27rem;
+list-style: none;
+background: var(--purple-secondary);
+cursor: pointer;
+padding-bottom: 15px;
+padding-left: 1.4rem;
+flex-direction: column;
+border-radius: 8px;
+} */
+/* .div-img .imgAdmin {
+  background: var(--purple-secondary);
+  height: 315px;
+  width: 315px;
+  border-radius: 50%;
+  }
+  .div-img .imgAdmin img {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 4px solid #fff;
+    } */
+
+.carouselCarrossel .cardCarrossel {
+scroll-snap-align: start;
+height: 27rem;
+list-style: none;
+background: var(--purple-secondary);
+cursor: pointer;
+padding-bottom: 15px;
+padding-left: 1.4rem;
+flex-direction: column;
+border-radius: 8px;
+}
+.carouselCarrossel .cardCarrossel .imgCarrossel {
+background: var(--purple-secondary);
+height: 315px;
+width: 315px;
+border-radius: 50%;
+}
+.cardCarrossel .imgCarrossel img {
+width: 280px;
+height: 300px;
+border-radius: 50%; 
+object-fit: cover;
+border: 4px solid #fff;
+}
+
+@media screen and (max-width: 900px) {
+.wrapperCarrossel .carouselCarrossel {
+  grid-auto-columns: calc((100% / 2) - 9px);
+}
+.bodyCarrossel .div-img {
+  flex-wrap: wrap;
+}
+}
+
+@media screen and (max-width: 600px) {
+.wrapperCarrossel .carouselCarrossel {
+  grid-auto-columns: 100%;
+}
+
 }
 /*******INICIO FOOTER******/
 footer {
@@ -1288,7 +1490,7 @@ h2 {
 }
 .text-center {
   text-align: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .text-upercase {
 text-transform: uppercase;
@@ -1322,9 +1524,7 @@ p{
   .card:nth-child(2n) {
       margin-top: 1rem;
   }
-  .section-seminar .title-p {
-    color: var(--gray-a);
-  }
+
 
 }
 @media screen and (max-width: 40rem) {
@@ -1415,7 +1615,7 @@ p{
     margin: 0 1rem;
   }
   .section-seminar .title-p {
-    color: var(--gray-a);
+    color: var(--white-c);
   }
   .introduction-content {
     margin-top: 1.5rem;
@@ -1453,6 +1653,7 @@ p{
   .carouselCarrossel .cardCarrossel {
     padding-left:1.2rem!important ;
   }
+  
 }
 @media screen and (min-width: 40rem) {
   header div {
@@ -1468,9 +1669,14 @@ p{
   .cards {
     flex-wrap: wrap;
   }
-  .section-seminar .title-p {
-    color: var(--gray-a);
-  }
+  .cards-coordenacao {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card-coord:nth-child(2n) {
+    margin-top: 1rem;
+}
   
 }
 @media screen and (max-width: 55rem) {
@@ -1512,115 +1718,4 @@ p{
   .news-letter-form {
       flex: 1;
   }
-  .section-seminar .title-p {
-    color: var(--gray-a);
-  }
-}
-
-/* Carrossel CSS */
-.bodyCarrossel {
-display: flex;
-padding: 0 40px; 
-align-items: center;
-justify-content: center;
-min-height: 100vh;
-background: var(--purple-secondary);
-flex-direction: column;
-}
-
-.wrapperCarrossel {
-max-width: 1100px;
-width: 100%;
-position: relative;
-}
-.wrapperCarrossel i {
-top: 50%;
-height: 50px;
-width: 50px;
-cursor: pointer;
-font-size: 1.25rem;
-position: absolute;
-text-align: center;
-line-height: 50px;
-background: #FFF;
-border-radius: 50%;
-box-shadow: 0 3px 6px rgba(0,0,0,0.23);
-transform: translateY(-50%);
-transition: transform 0.1s linear;
-}
-.wrapperCarrossel i:active{
-transform: translateY(-50%) scale(0.85);
-}
-.wrapperCarrossel i:first-child{
-left: -22px;
-}
-.wrapperCarrossel i:last-child{
-right: -22px;
-}
-.wrapperCarrossel .carouselCarrossel{
-display: grid;
-grid-auto-flow: column;
-grid-auto-columns: calc((100% / 3) - 12px);
-overflow-x: auto;
-scroll-snap-type: x mandatory;
-gap: 16px;
-border-radius: 8px;
-scroll-behavior: smooth;
-scrollbar-width: none;
-}
-.carouselCarrossel::-webkit-scrollbar {
-display: none;
-}
-.carouselCarrossel.no-transition {
-scroll-behavior: auto;
-}
-.carouselCarrossel.dragging {
-scroll-snap-type: none;
-scroll-behavior: auto;
-}
-.carouselCarrossel.dragging .cardCarrossel {
-cursor: grab;
-user-select: none;
-}
-.carouselCarrossel :where(.card, .img) {
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.carouselCarrossel .cardCarrossel {
-scroll-snap-align: start;
-
-height: 27rem;
-list-style: none;
-background: var(--purple-secondary);
-cursor: pointer;
-padding-bottom: 15px;
-padding-left: 1.4rem;
-flex-direction: column;
-border-radius: 8px;
-}
-.carouselCarrossel .cardCarrossel .imgCarrossel {
-background: var(--purple-secondary);
-height: 315px;
-width: 315px;
-border-radius: 50%;
-}
-.cardCarrossel .imgCarrossel img {
-width: 300px;
-height: 300px;
-border-radius: 50%;
-object-fit: cover;
-border: 4px solid #fff;
-}
-
-@media screen and (max-width: 900px) {
-.wrapperCarrossel .carouselCarrossel {
-  grid-auto-columns: calc((100% / 2) - 9px);
-}
-}
-
-@media screen and (max-width: 600px) {
-.wrapperCarrossel .carouselCarrossel {
-  grid-auto-columns: 100%;
-}
 }
