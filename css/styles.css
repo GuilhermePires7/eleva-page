@@ -685,7 +685,7 @@ nav a:hover {
 }
 .section-patrocinio .div-img-patrocinio img{
   width: 40%;
-  margin: 0 1 rem;
+  margin: 0 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1407,7 +1407,7 @@ p.p-title {
 /* Carrossel CSS COORDENAÇÃO */
 .section-coordenacao {
   width: 100%;
-  margin-top: 10rem;
+  margin-top: 4rem;
 }
 
 .cards-coordenacao {
@@ -1943,6 +1943,13 @@ p {
     padding-left: 1.2rem !important;
   }
 
+  .section-patrocinio .div-img-patrocinio img{
+    width: 90%;
+    margin: 0 1rem;
+    display: flex;
+    justify-content: center;
+    
+  }
 }
 
 @media screen and (min-width: 40rem) {
