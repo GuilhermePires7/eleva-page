@@ -862,6 +862,27 @@ nav a:hover {
   width: 100%;
 }
 
+.section-palestrantes .card-primary .card-content .content-theo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ 
+}
+.section-palestrantes .card-primary .card-content .content-theo .theo {
+  width: 17%;
+  height: 17%;
+}
+.section-palestrantes .card-primary .card-content .content-theo .title-p {
+  font-weight: 600;
+  font-size: 1.4rem;
+  padding: 0px;
+  margin-top: 2rem;
+  
+}
+.section-palestrantes .card-primary .content-description .title-p .back {
+  font-weight: 900;
+}
+
 .card-content {
   padding-top: 1.5rem;
   width: 100%;
@@ -886,7 +907,7 @@ nav a:hover {
 
 p.p-title {
   margin: 0px 45px 0px 16px;
-  font-size: 1.4rem !important;
+  font-size: 1.4rem;
   text-align: center !important;
 }
 
@@ -1075,8 +1096,8 @@ p.p-title {
 }
 
 p.p-title {
-  font-size: 1.4rem !important;
-  text-align: center !important;
+  font-size: 1.4rem ;
+  text-align: center;
 }
 
 .format-text-p {
@@ -1939,6 +1960,9 @@ p {
     font-size: 3rem;
   }
 
+  .section-palestrantes .card-primary .card-content .content-theo .theo {
+    margin-top: 1.5rem;
+  }
   .carouselCarrossel .cardCarrossel {
     padding-left: 1.2rem !important;
   }
