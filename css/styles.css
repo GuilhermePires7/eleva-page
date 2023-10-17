@@ -731,6 +731,9 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
 }
+.content-certificado .title-h1 {
+  color: var(--gray-a);
+}
 .description-certificado {
   width: 50%;
   display: flex;
@@ -738,7 +741,6 @@ nav a:hover {
   justify-content: center;
   margin: 0 auto;
   padding: 2rem 0;
-
 }
 .description-seminar-logo {
   width: 50%;
@@ -1478,6 +1480,7 @@ p.p-title {
 
 .bodyCarrossel .div-img {
   width: 70%;
+  list-style: none;
 }
 
 .wrapperCarrossel {
@@ -1869,6 +1872,28 @@ p {
     color: var(--white-c);
   }
 
+  .section-certificado .content-certificado {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .description-seminar-logo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  .description-seminar-logo .title-h1 {
+    color: var(--gray-a);
+    font-size: 4rem;
+  }
+  .section-certificado .description-seminar{
+    width: 100%;
+  }
   .introduction-content {
     margin-top: 1.5rem;
   }
