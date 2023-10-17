@@ -672,23 +672,26 @@ nav a:hover {
   width: 20%;
   margin: 0 4rem;
 }
-
-.section-patrocinio .div-img-patrocinio img{
-width: 40%;
-  margin: 0 1 rem;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-}
-
-.div-img-patrocinio img{
-  align-items: center;
-  justify-content: center;
-}
 .section-patrocinio{
   width: 100%;
-  
+  justify-content: center;
 }
+.section-patrocinio .card-topo{
+  width: 100%;
+  justify-content: center;
+}
+.section-patrocinio .card-topo .title-h1{
+  color: var(--gray-a);
+}
+.section-patrocinio .div-img-patrocinio img{
+  width: 40%;
+  margin: 0 1 rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .div-img-patrocinio{
   display: flex;
   flex-direction: row;
@@ -736,6 +739,17 @@ width: 40%;
   margin: 0 auto;
   padding: 2rem 0;
 
+}
+.description-seminar-logo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.description-seminar-logo .div-img img {
+  width: 15%;
 }
 .section-certificado img{
   width: 90%;
