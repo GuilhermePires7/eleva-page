@@ -1769,7 +1769,9 @@ h2 {
 .h1-white {
   color: var(--black);
 }
-
+.text-end {
+  text-align: end!important;
+}
 
 p {
   /* background-color: #00D1FF; */
