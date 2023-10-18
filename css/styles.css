@@ -3,6 +3,7 @@
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 @font-face {
@@ -1682,7 +1683,19 @@ h2 {
   margin-bottom: 4rem;
 
 }
-
+.section-midia-publicidade .content-seminar .div-img {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.section-midia-publicidade .content-seminar .description-seminar-logo a img {
+  margin: 0;
+}
+.section-midia-publicidade .content-seminar .description-seminar-logo a .click{
+  margin-left: -2rem;
+  width: 15%;
+}
 .section-midia-publicidade .title-h1 {
   color: var(--white-a);
 }
@@ -1711,18 +1724,6 @@ h2 {
 
 }
 
-.description-seminar .fa-youtube{
-  width: 50px;
-  height: 10px;
-}
-
-.midia-publicidade  .content-seminar{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  align-items: center;
-} 
 
 
 
@@ -1755,9 +1756,11 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-.section-patrocinio .patrocinio-apoio .escola-aragao a {
+.section-patrocinio .patrocinio-apoio .escola-aragao a:link, a:visited {
+  text-decoration: none;
   width: 50%;
 }
+
 .section-patrocinio .patrocinio-apoio .escola-aragao img {
   width: 61%;
   border-radius: 20px;
@@ -1985,6 +1988,15 @@ p {
   .description-seminar-logo .title-h1 {
     color: var(--gray-a);
     font-size: 4rem;
+  }
+  .section-midia-publicidade .content-seminar .title-h1 {
+    margin: 1rem 0 0.5rem 0;
+  }
+  .section-midia-publicidade .content-seminar .description-seminar-logo .title-p {
+    margin-top: 1rem;
+  }
+  .section-midia-publicidade .content-seminar .description-seminar-logo .dds {
+    margin-top: 2.5rem;
   }
   .section-certificado .description-seminar{
     width: 100%;
