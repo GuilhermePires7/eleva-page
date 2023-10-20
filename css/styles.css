@@ -2006,6 +2006,17 @@ p {
     color: var(--gray-a);
     font-size: 4rem;
   }
+  .bodyCarrossel .div-img {
+    margin-left: 1.5rem;
+  }
+  .cardCarrossel .imgCarrossel  {
+    width: 20rem;
+    margin: 0px;
+  }
+  .cardCarrossel .imgCarrossel img {
+    width: 90%;
+    margin: 0px;
+  }
   .section-midia-publicidade .content-seminar .title-h1 {
     margin: 1rem 0 0.5rem 0;
   }
