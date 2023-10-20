@@ -492,6 +492,7 @@ nav a:hover {
   font-family: 'Montserrat';
   font-weight: 980;
   letter-spacing: -2px;
+  font-size: 3.5rem;
  
 }
 
@@ -509,13 +510,14 @@ nav a:hover {
 .title-p {
   color: var(--gray-a);
   font-weight: 400;
+  font-size: 1.25;
 }
 
 .title-p-introduction {
   text-align: center;
   color: var(--white-a);
   text-shadow: 1px 1px 1px var(--black);
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 400;
   padding: 0;
 
@@ -530,11 +532,11 @@ nav a:hover {
 .content-date {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .content-date a {
   width: 30%;
-  margin-top: 1rem;
 }
 
 .introduction-local {
@@ -584,7 +586,7 @@ nav a:hover {
 
 .section-ddsday .title-p-introduction {
   text-shadow: none;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin: 2rem auto;
   color: var(--purple-weavy);
@@ -860,7 +862,7 @@ nav a:hover {
 }
 .section-palestrantes .card-primary .card-content .content-theo .title-p {
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   padding: 0px;
   margin-top: 2rem;
   
@@ -1961,7 +1963,7 @@ p {
 
   .section-ddsday .title-p-introduction {
     padding: 1.1rem;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
   }
 
   .section-seminar {
